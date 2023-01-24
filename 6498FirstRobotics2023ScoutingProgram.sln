@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6498FirstRobotics2023ScoutingProgram", "6498FirstRobotics2023ScoutingProgram\6498FirstRobotics2023ScoutingProgram.csproj", "{DC685C6C-D4E4-4816-81DF-12D53283A37E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC685C6C-D4E4-4816-81DF-12D53283A37E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC685C6C-D4E4-4816-81DF-12D53283A37E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC685C6C-D4E4-4816-81DF-12D53283A37E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC685C6C-D4E4-4816-81DF-12D53283A37E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D087C52-27F0-43D1-8A93-52A76C1390FA}
+	EndGlobalSection
+EndGlobal
