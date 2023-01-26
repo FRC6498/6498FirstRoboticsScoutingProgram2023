@@ -105,6 +105,12 @@
             this.txtMatchNumber = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.txtTeamNumber = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.chkFloor = new System.Windows.Forms.CheckBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.chkShelf = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnAddHighAutoCone
@@ -919,6 +925,7 @@
             this.txtMatchNumber.Size = new System.Drawing.Size(65, 34);
             this.txtMatchNumber.TabIndex = 68;
             this.txtMatchNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMatchNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTeamNumber_KeyPress);
             // 
             // label31
             // 
@@ -943,11 +950,75 @@
             this.txtTeamNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtTeamNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTeamNumber_KeyPress);
             // 
+            // label32
+            // 
+            this.label32.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(1383, 299);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(468, 10);
+            this.label32.TabIndex = 70;
+            // 
+            // chkFloor
+            // 
+            this.chkFloor.AutoSize = true;
+            this.chkFloor.Location = new System.Drawing.Point(1668, 397);
+            this.chkFloor.Name = "chkFloor";
+            this.chkFloor.Size = new System.Drawing.Size(18, 17);
+            this.chkFloor.TabIndex = 71;
+            this.chkFloor.UseVisualStyleBackColor = true;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(1529, 314);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(157, 54);
+            this.label33.TabIndex = 72;
+            this.label33.Text = "Intake";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(1361, 383);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(269, 32);
+            this.label34.TabIndex = 73;
+            this.label34.Text = "Picked up off Floor";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(1361, 458);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(270, 32);
+            this.label35.TabIndex = 75;
+            this.label35.Text = "Picked up off Shelf";
+            // 
+            // chkShelf
+            // 
+            this.chkShelf.AutoSize = true;
+            this.chkShelf.Location = new System.Drawing.Point(1668, 472);
+            this.chkShelf.Name = "chkShelf";
+            this.chkShelf.Size = new System.Drawing.Size(18, 17);
+            this.chkShelf.TabIndex = 74;
+            this.chkShelf.UseVisualStyleBackColor = true;
+            // 
             // frmData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1919, 710);
+            this.Controls.Add(this.label35);
+            this.Controls.Add(this.chkShelf);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.label33);
+            this.Controls.Add(this.chkFloor);
+            this.Controls.Add(this.label32);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.txtMatchNumber);
             this.Controls.Add(this.label30);
@@ -1113,6 +1184,12 @@
         private System.Windows.Forms.Button btnSubtractHighTeleCube;
         private System.Windows.Forms.Button btnSubtractHighTeleCone;
         private System.Windows.Forms.TextBox txtTeamNumber;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.CheckBox chkFloor;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.CheckBox chkShelf;
     }
 }
 

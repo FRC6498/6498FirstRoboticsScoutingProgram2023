@@ -19,6 +19,10 @@ namespace _6498FirstRobotics2023ScoutingProgram
         //6498 Scouting Program for 2023 FIRST Robotics Compeition Season "Charged Up"
         //Programmed by: Graham Jones
 
+        //list of textboxes used to prevent unsaved data from changing
+        List<TextBox> unsavedData = new List<TextBox>();
+        bool dataNotSaved = false;
+
         private void Form1_Load(object sender, EventArgs e)
         {
             //puts form in a single spot since the window is undraggable.
@@ -40,8 +44,37 @@ namespace _6498FirstRobotics2023ScoutingProgram
         {
             //this button acts as an alt+f4, unless data has been changed.
             //If it has, it will give a popup showing unsaved entries are present.
-            MessageBox.Show("");
-            Application.Exit();
+            dataNotSaved = false;
+
+            #region Detects Unsaved Data
+            for (int i = 0; i < unsavedData.Count; i++)
+            {
+                if (Convert.ToInt16(unsavedData[i].Text) != 0)
+                {
+                    dataNotSaved = true;
+                }
+            }
+
+            if (txtTeamNumber.Text != "" || txtMatchNumber.Text != "" || cmbAutoCharge.SelectedIndex != 0 || cmbEndGameChargingStation.SelectedIndex != 0 || chkFloor.Checked == true || chkLink.Checked == true || chkMobility.Checked == true || chkShelf.Checked == true)
+            {
+                dataNotSaved = true;
+            }
+            #endregion
+
+            if (dataNotSaved)
+            {
+                DialogResult dialogResult = MessageBox.Show("Would you like to discard your currently unsaved data?", "UNSAVED DATA DETECTED", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            }
+            else
+            {
+                Application.Exit();
+            }
+
+            
         }
 
         private void ResetInputs()
@@ -69,10 +102,12 @@ namespace _6498FirstRobotics2023ScoutingProgram
             //resets checkboxes
             chkMobility.Checked= false;
             chkLink.Checked = false;
-
+            chkShelf.Checked = false;
+            chkFloor.Checked = false;
             //sets the default value to the [0] item in the list, which is technically the first, as a default.
             cmbAutoCharge.SelectedIndex = 0;
             cmbEndGameChargingStation.SelectedIndex = 0;
+
             
         }
 
@@ -144,6 +179,23 @@ namespace _6498FirstRobotics2023ScoutingProgram
             btnSubtractLowTeleCube.Tag = "txtTeleLowCubes";
             #endregion
 
+            #region Textbox Addition to the list checking system.
+            unsavedData.Add(txtAutoHighCones);
+            unsavedData.Add(txtAutoMidCones);
+            unsavedData.Add(txtAutoLowCones);
+
+            unsavedData.Add(txtAutoHighCubes);
+            unsavedData.Add(txtAutoMidCubes);
+            unsavedData.Add(txtAutoLowCubes);
+
+            unsavedData.Add(txtTeleHighCones);
+            unsavedData.Add(txtTeleMidCones);
+            unsavedData.Add(txtTeleLowCones);
+
+            unsavedData.Add(txtTeleHighCubes);
+            unsavedData.Add(txtTeleMidCubes);
+            unsavedData.Add(txtTeleLowCubes);
+            #endregion
         }
 
         private void btnAddHighAutoCone_Click(object sender, EventArgs e)
