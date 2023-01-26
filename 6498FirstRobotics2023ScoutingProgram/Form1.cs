@@ -64,7 +64,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
 
             if (dataNotSaved)
             {
-                DialogResult dialogResult = MessageBox.Show("Would you like to discard your currently unsaved data?\nWARNING: It cannot be recovered if you select\"Yes\"", "UNSAVED DATA DETECTED", MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show("Would you like to discard your currently unsaved data?\nWARNING: It cannot be recovered if you select \"Yes\"", "UNSAVED DATA DETECTED", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     Application.Exit();
