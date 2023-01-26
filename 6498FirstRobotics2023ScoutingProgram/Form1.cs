@@ -16,7 +16,8 @@ namespace _6498FirstRobotics2023ScoutingProgram
         {
             InitializeComponent();
         }
-        //6498 Scouting Program for 2023 FIRST Robotics Compeition Season "Charged Up"
+        //6498 Scouting Program for
+        //2023 FIRST Robotics Compeition Season "Charged Up"
         //Programmed by: Graham Jones
 
         //list of textboxes used to prevent unsaved data from changing
