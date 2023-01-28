@@ -58,7 +58,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
                 }
             }
 
-            if (txtTeamNumber.Text != "" || txtMatchNumber.Text != "" || cmbAutoCharge.SelectedIndex != 0 || cmbEndGameChargingStation.SelectedIndex != 0 || chkFloor.Checked == true || chkLink.Checked == true || chkMobility.Checked == true || chkShelf.Checked == true)
+            if (txtTeamNumber.Text != "" || txtMatchNumber.Text != "" || txtNotes.Text != "" || cmbAutoCharge.SelectedIndex != 0 || cmbEndGameChargingStation.SelectedIndex != 0 || chkFloor.Checked == true || chkLink.Checked == true || chkMobility.Checked == true || chkShelf.Checked == true)
             {
                 dataNotSaved = true;
             }
@@ -111,7 +111,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
             cmbAutoCharge.SelectedIndex = 0;
             cmbEndGameChargingStation.SelectedIndex = 0;
 
-
+            txtNotes.Text = null;
         }
 
         private void button24_Click_1(object sender, EventArgs e)
@@ -250,6 +250,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
             {
                 e.Handled = true;
             }
+
             if (e.KeyChar == Convert.ToChar(","))
             {
                 e.Handled = true;

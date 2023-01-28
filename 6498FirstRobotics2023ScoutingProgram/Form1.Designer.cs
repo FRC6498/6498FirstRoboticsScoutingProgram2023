@@ -117,9 +117,10 @@
             // btnAddHighAutoCone
             // 
             this.btnAddHighAutoCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddHighAutoCone.Location = new System.Drawing.Point(277, 342);
+            this.btnAddHighAutoCone.Location = new System.Drawing.Point(208, 278);
+            this.btnAddHighAutoCone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddHighAutoCone.Name = "btnAddHighAutoCone";
-            this.btnAddHighAutoCone.Size = new System.Drawing.Size(52, 52);
+            this.btnAddHighAutoCone.Size = new System.Drawing.Size(39, 42);
             this.btnAddHighAutoCone.TabIndex = 0;
             this.btnAddHighAutoCone.Text = "+";
             this.btnAddHighAutoCone.UseVisualStyleBackColor = true;
@@ -128,9 +129,10 @@
             // btnSubtractHighAutoCone
             // 
             this.btnSubtractHighAutoCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtractHighAutoCone.Location = new System.Drawing.Point(111, 342);
+            this.btnSubtractHighAutoCone.Location = new System.Drawing.Point(83, 278);
+            this.btnSubtractHighAutoCone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubtractHighAutoCone.Name = "btnSubtractHighAutoCone";
-            this.btnSubtractHighAutoCone.Size = new System.Drawing.Size(52, 52);
+            this.btnSubtractHighAutoCone.Size = new System.Drawing.Size(39, 42);
             this.btnSubtractHighAutoCone.TabIndex = 2;
             this.btnSubtractHighAutoCone.Text = "-";
             this.btnSubtractHighAutoCone.UseVisualStyleBackColor = true;
@@ -140,9 +142,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(407, 18);
+            this.label1.Location = new System.Drawing.Point(305, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 54);
+            this.label1.Size = new System.Drawing.Size(101, 44);
             this.label1.TabIndex = 3;
             this.label1.Text = "Auto";
             // 
@@ -150,9 +153,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(0, 332);
+            this.label2.Location = new System.Drawing.Point(0, 270);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 32);
+            this.label2.Size = new System.Drawing.Size(80, 26);
             this.label2.TabIndex = 4;
             this.label2.Text = "Cones";
             // 
@@ -160,38 +164,42 @@
             // 
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(234, 7);
+            this.label3.Location = new System.Drawing.Point(176, 6);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(10, 258);
+            this.label3.Size = new System.Drawing.Size(8, 210);
             this.label3.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1344, -10);
+            this.label4.Location = new System.Drawing.Point(1008, -8);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(11, 721);
+            this.label4.Size = new System.Drawing.Size(8, 586);
             this.label4.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(715, -10);
+            this.label5.Location = new System.Drawing.Point(536, -8);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(10, 721);
+            this.label5.Size = new System.Drawing.Size(8, 586);
             this.label5.TabIndex = 8;
             // 
             // txtAutoMidCones
             // 
             this.txtAutoMidCones.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAutoMidCones.Location = new System.Drawing.Point(169, 447);
+            this.txtAutoMidCones.Location = new System.Drawing.Point(127, 363);
+            this.txtAutoMidCones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAutoMidCones.MaxLength = 3;
             this.txtAutoMidCones.Multiline = true;
             this.txtAutoMidCones.Name = "txtAutoMidCones";
             this.txtAutoMidCones.ReadOnly = true;
-            this.txtAutoMidCones.Size = new System.Drawing.Size(100, 43);
+            this.txtAutoMidCones.Size = new System.Drawing.Size(76, 36);
             this.txtAutoMidCones.TabIndex = 12;
             this.txtAutoMidCones.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -199,18 +207,20 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(346, 332);
+            this.label6.Location = new System.Drawing.Point(260, 270);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 32);
+            this.label6.Size = new System.Drawing.Size(87, 26);
             this.label6.TabIndex = 11;
             this.label6.Text = "Cubes:";
             // 
             // btnSubtractMidAutoCone
             // 
             this.btnSubtractMidAutoCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtractMidAutoCone.Location = new System.Drawing.Point(111, 439);
+            this.btnSubtractMidAutoCone.Location = new System.Drawing.Point(83, 357);
+            this.btnSubtractMidAutoCone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubtractMidAutoCone.Name = "btnSubtractMidAutoCone";
-            this.btnSubtractMidAutoCone.Size = new System.Drawing.Size(52, 52);
+            this.btnSubtractMidAutoCone.Size = new System.Drawing.Size(39, 42);
             this.btnSubtractMidAutoCone.TabIndex = 10;
             this.btnSubtractMidAutoCone.Text = "-";
             this.btnSubtractMidAutoCone.UseVisualStyleBackColor = true;
@@ -219,9 +229,10 @@
             // btnAddMidAutoCone
             // 
             this.btnAddMidAutoCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMidAutoCone.Location = new System.Drawing.Point(277, 439);
+            this.btnAddMidAutoCone.Location = new System.Drawing.Point(208, 357);
+            this.btnAddMidAutoCone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddMidAutoCone.Name = "btnAddMidAutoCone";
-            this.btnAddMidAutoCone.Size = new System.Drawing.Size(52, 52);
+            this.btnAddMidAutoCone.Size = new System.Drawing.Size(39, 42);
             this.btnAddMidAutoCone.TabIndex = 9;
             this.btnAddMidAutoCone.Text = "+";
             this.btnAddMidAutoCone.UseVisualStyleBackColor = true;
@@ -230,12 +241,13 @@
             // txtAutoHighCones
             // 
             this.txtAutoHighCones.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAutoHighCones.Location = new System.Drawing.Point(169, 350);
+            this.txtAutoHighCones.Location = new System.Drawing.Point(127, 284);
+            this.txtAutoHighCones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAutoHighCones.MaxLength = 3;
             this.txtAutoHighCones.Multiline = true;
             this.txtAutoHighCones.Name = "txtAutoHighCones";
             this.txtAutoHighCones.ReadOnly = true;
-            this.txtAutoHighCones.Size = new System.Drawing.Size(100, 43);
+            this.txtAutoHighCones.Size = new System.Drawing.Size(76, 36);
             this.txtAutoHighCones.TabIndex = 13;
             this.txtAutoHighCones.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -243,18 +255,20 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(309, 95);
+            this.label7.Location = new System.Drawing.Point(232, 77);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(226, 32);
+            this.label7.Size = new System.Drawing.Size(180, 26);
             this.label7.TabIndex = 14;
             this.label7.Text = "Left Community";
             // 
             // chkMobility
             // 
             this.chkMobility.AutoSize = true;
-            this.chkMobility.Location = new System.Drawing.Point(545, 103);
+            this.chkMobility.Location = new System.Drawing.Point(409, 84);
+            this.chkMobility.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkMobility.Name = "chkMobility";
-            this.chkMobility.Size = new System.Drawing.Size(18, 17);
+            this.chkMobility.Size = new System.Drawing.Size(15, 14);
             this.chkMobility.TabIndex = 15;
             this.chkMobility.UseVisualStyleBackColor = true;
             // 
@@ -262,9 +276,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(357, 202);
+            this.label8.Location = new System.Drawing.Point(268, 164);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(243, 32);
+            this.label8.Size = new System.Drawing.Size(190, 26);
             this.label8.TabIndex = 16;
             this.label8.Text = "Charging Station";
             // 
@@ -277,38 +292,42 @@
             "Not Docked",
             "Docked & Not Engaged (unbalanced)",
             "Docked & Engaged (balanced)"});
-            this.cmbAutoCharge.Location = new System.Drawing.Point(277, 237);
+            this.cmbAutoCharge.Location = new System.Drawing.Point(208, 193);
+            this.cmbAutoCharge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbAutoCharge.Name = "cmbAutoCharge";
-            this.cmbAutoCharge.Size = new System.Drawing.Size(390, 28);
+            this.cmbAutoCharge.Size = new System.Drawing.Size(294, 25);
             this.cmbAutoCharge.TabIndex = 17;
             // 
             // label9
             // 
             this.label9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(0, 255);
+            this.label9.Location = new System.Drawing.Point(0, 207);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(241, 10);
+            this.label9.Size = new System.Drawing.Size(181, 8);
             this.label9.TabIndex = 18;
             // 
             // txtAutoLowCones
             // 
             this.txtAutoLowCones.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAutoLowCones.Location = new System.Drawing.Point(169, 554);
+            this.txtAutoLowCones.Location = new System.Drawing.Point(127, 450);
+            this.txtAutoLowCones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAutoLowCones.MaxLength = 3;
             this.txtAutoLowCones.Multiline = true;
             this.txtAutoLowCones.Name = "txtAutoLowCones";
             this.txtAutoLowCones.ReadOnly = true;
-            this.txtAutoLowCones.Size = new System.Drawing.Size(100, 43);
+            this.txtAutoLowCones.Size = new System.Drawing.Size(76, 36);
             this.txtAutoLowCones.TabIndex = 21;
             this.txtAutoLowCones.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnSubtractLowAutoCone
             // 
             this.btnSubtractLowAutoCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtractLowAutoCone.Location = new System.Drawing.Point(111, 552);
+            this.btnSubtractLowAutoCone.Location = new System.Drawing.Point(83, 448);
+            this.btnSubtractLowAutoCone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubtractLowAutoCone.Name = "btnSubtractLowAutoCone";
-            this.btnSubtractLowAutoCone.Size = new System.Drawing.Size(52, 52);
+            this.btnSubtractLowAutoCone.Size = new System.Drawing.Size(39, 42);
             this.btnSubtractLowAutoCone.TabIndex = 20;
             this.btnSubtractLowAutoCone.Text = "-";
             this.btnSubtractLowAutoCone.UseVisualStyleBackColor = true;
@@ -317,9 +336,10 @@
             // btnAddLowAutoCone
             // 
             this.btnAddLowAutoCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddLowAutoCone.Location = new System.Drawing.Point(277, 552);
+            this.btnAddLowAutoCone.Location = new System.Drawing.Point(208, 448);
+            this.btnAddLowAutoCone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddLowAutoCone.Name = "btnAddLowAutoCone";
-            this.btnAddLowAutoCone.Size = new System.Drawing.Size(52, 52);
+            this.btnAddLowAutoCone.Size = new System.Drawing.Size(39, 42);
             this.btnAddLowAutoCone.TabIndex = 19;
             this.btnAddLowAutoCone.Text = "+";
             this.btnAddLowAutoCone.UseVisualStyleBackColor = true;
@@ -328,9 +348,10 @@
             // btnAddHighAutoCube
             // 
             this.btnAddHighAutoCube.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddHighAutoCube.Location = new System.Drawing.Point(636, 342);
+            this.btnAddHighAutoCube.Location = new System.Drawing.Point(477, 278);
+            this.btnAddHighAutoCube.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddHighAutoCube.Name = "btnAddHighAutoCube";
-            this.btnAddHighAutoCube.Size = new System.Drawing.Size(52, 52);
+            this.btnAddHighAutoCube.Size = new System.Drawing.Size(39, 42);
             this.btnAddHighAutoCube.TabIndex = 0;
             this.btnAddHighAutoCube.Text = "+";
             this.btnAddHighAutoCube.UseVisualStyleBackColor = true;
@@ -339,9 +360,10 @@
             // btnSubtractHighAutoCube
             // 
             this.btnSubtractHighAutoCube.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtractHighAutoCube.Location = new System.Drawing.Point(470, 342);
+            this.btnSubtractHighAutoCube.Location = new System.Drawing.Point(352, 278);
+            this.btnSubtractHighAutoCube.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubtractHighAutoCube.Name = "btnSubtractHighAutoCube";
-            this.btnSubtractHighAutoCube.Size = new System.Drawing.Size(52, 52);
+            this.btnSubtractHighAutoCube.Size = new System.Drawing.Size(39, 42);
             this.btnSubtractHighAutoCube.TabIndex = 2;
             this.btnSubtractHighAutoCube.Text = "-";
             this.btnSubtractHighAutoCube.UseVisualStyleBackColor = true;
@@ -350,9 +372,10 @@
             // btnAddMidAutoCube
             // 
             this.btnAddMidAutoCube.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMidAutoCube.Location = new System.Drawing.Point(636, 439);
+            this.btnAddMidAutoCube.Location = new System.Drawing.Point(477, 357);
+            this.btnAddMidAutoCube.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddMidAutoCube.Name = "btnAddMidAutoCube";
-            this.btnAddMidAutoCube.Size = new System.Drawing.Size(52, 52);
+            this.btnAddMidAutoCube.Size = new System.Drawing.Size(39, 42);
             this.btnAddMidAutoCube.TabIndex = 9;
             this.btnAddMidAutoCube.Text = "+";
             this.btnAddMidAutoCube.UseVisualStyleBackColor = true;
@@ -361,9 +384,10 @@
             // btnSubtractMidAutoCube
             // 
             this.btnSubtractMidAutoCube.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtractMidAutoCube.Location = new System.Drawing.Point(470, 439);
+            this.btnSubtractMidAutoCube.Location = new System.Drawing.Point(352, 357);
+            this.btnSubtractMidAutoCube.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubtractMidAutoCube.Name = "btnSubtractMidAutoCube";
-            this.btnSubtractMidAutoCube.Size = new System.Drawing.Size(52, 52);
+            this.btnSubtractMidAutoCube.Size = new System.Drawing.Size(39, 42);
             this.btnSubtractMidAutoCube.TabIndex = 10;
             this.btnSubtractMidAutoCube.Text = "-";
             this.btnSubtractMidAutoCube.UseVisualStyleBackColor = true;
@@ -372,33 +396,38 @@
             // txtAutoMidCubes
             // 
             this.txtAutoMidCubes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAutoMidCubes.Location = new System.Drawing.Point(528, 447);
+            this.txtAutoMidCubes.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtAutoMidCubes.Location = new System.Drawing.Point(396, 363);
+            this.txtAutoMidCubes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAutoMidCubes.MaxLength = 3;
             this.txtAutoMidCubes.Multiline = true;
             this.txtAutoMidCubes.Name = "txtAutoMidCubes";
             this.txtAutoMidCubes.ReadOnly = true;
-            this.txtAutoMidCubes.Size = new System.Drawing.Size(100, 43);
+            this.txtAutoMidCubes.Size = new System.Drawing.Size(76, 36);
             this.txtAutoMidCubes.TabIndex = 12;
             this.txtAutoMidCubes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtAutoHighCubes
             // 
             this.txtAutoHighCubes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAutoHighCubes.Location = new System.Drawing.Point(528, 351);
+            this.txtAutoHighCubes.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtAutoHighCubes.Location = new System.Drawing.Point(396, 285);
+            this.txtAutoHighCubes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAutoHighCubes.MaxLength = 3;
             this.txtAutoHighCubes.Multiline = true;
             this.txtAutoHighCubes.Name = "txtAutoHighCubes";
             this.txtAutoHighCubes.ReadOnly = true;
-            this.txtAutoHighCubes.Size = new System.Drawing.Size(100, 43);
+            this.txtAutoHighCubes.Size = new System.Drawing.Size(76, 36);
             this.txtAutoHighCubes.TabIndex = 13;
             this.txtAutoHighCubes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnAddLowAutoCube
             // 
             this.btnAddLowAutoCube.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddLowAutoCube.Location = new System.Drawing.Point(636, 552);
+            this.btnAddLowAutoCube.Location = new System.Drawing.Point(477, 448);
+            this.btnAddLowAutoCube.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddLowAutoCube.Name = "btnAddLowAutoCube";
-            this.btnAddLowAutoCube.Size = new System.Drawing.Size(52, 52);
+            this.btnAddLowAutoCube.Size = new System.Drawing.Size(39, 42);
             this.btnAddLowAutoCube.TabIndex = 19;
             this.btnAddLowAutoCube.Text = "+";
             this.btnAddLowAutoCube.UseVisualStyleBackColor = true;
@@ -407,9 +436,10 @@
             // btnSubtractLowAutoCube
             // 
             this.btnSubtractLowAutoCube.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtractLowAutoCube.Location = new System.Drawing.Point(470, 552);
+            this.btnSubtractLowAutoCube.Location = new System.Drawing.Point(352, 448);
+            this.btnSubtractLowAutoCube.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubtractLowAutoCube.Name = "btnSubtractLowAutoCube";
-            this.btnSubtractLowAutoCube.Size = new System.Drawing.Size(52, 52);
+            this.btnSubtractLowAutoCube.Size = new System.Drawing.Size(39, 42);
             this.btnSubtractLowAutoCube.TabIndex = 20;
             this.btnSubtractLowAutoCube.Text = "-";
             this.btnSubtractLowAutoCube.UseVisualStyleBackColor = true;
@@ -418,12 +448,14 @@
             // txtAutoLowCubes
             // 
             this.txtAutoLowCubes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAutoLowCubes.Location = new System.Drawing.Point(528, 552);
+            this.txtAutoLowCubes.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtAutoLowCubes.Location = new System.Drawing.Point(396, 448);
+            this.txtAutoLowCubes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAutoLowCubes.MaxLength = 3;
             this.txtAutoLowCubes.Multiline = true;
             this.txtAutoLowCubes.Name = "txtAutoLowCubes";
             this.txtAutoLowCubes.ReadOnly = true;
-            this.txtAutoLowCubes.Size = new System.Drawing.Size(100, 43);
+            this.txtAutoLowCubes.Size = new System.Drawing.Size(76, 36);
             this.txtAutoLowCubes.TabIndex = 21;
             this.txtAutoLowCubes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -431,9 +463,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(188, 314);
+            this.label10.Location = new System.Drawing.Point(141, 255);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 25);
+            this.label10.Size = new System.Drawing.Size(46, 20);
             this.label10.TabIndex = 22;
             this.label10.Text = "High";
             // 
@@ -441,9 +474,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(553, 314);
+            this.label11.Location = new System.Drawing.Point(410, 255);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 25);
+            this.label11.Size = new System.Drawing.Size(46, 20);
             this.label11.TabIndex = 23;
             this.label11.Text = "High";
             // 
@@ -451,9 +485,10 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(192, 411);
+            this.label12.Location = new System.Drawing.Point(144, 334);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 25);
+            this.label12.Size = new System.Drawing.Size(37, 20);
             this.label12.TabIndex = 22;
             this.label12.Text = "Mid";
             // 
@@ -461,9 +496,10 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(553, 411);
+            this.label13.Location = new System.Drawing.Point(415, 334);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(47, 25);
+            this.label13.Size = new System.Drawing.Size(37, 20);
             this.label13.TabIndex = 24;
             this.label13.Text = "Mid";
             // 
@@ -471,9 +507,10 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(192, 524);
+            this.label14.Location = new System.Drawing.Point(144, 426);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 25);
+            this.label14.Size = new System.Drawing.Size(41, 20);
             this.label14.TabIndex = 25;
             this.label14.Text = "Low";
             // 
@@ -481,9 +518,10 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(553, 524);
+            this.label15.Location = new System.Drawing.Point(415, 426);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(51, 25);
+            this.label15.Size = new System.Drawing.Size(41, 20);
             this.label15.TabIndex = 26;
             this.label15.Text = "Low";
             // 
@@ -491,9 +529,10 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1187, 218);
+            this.label16.Location = new System.Drawing.Point(890, 177);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(51, 25);
+            this.label16.Size = new System.Drawing.Size(41, 20);
             this.label16.TabIndex = 52;
             this.label16.Text = "Low";
             // 
@@ -501,9 +540,10 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(1187, 554);
+            this.label17.Location = new System.Drawing.Point(890, 450);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(51, 25);
+            this.label17.Size = new System.Drawing.Size(41, 20);
             this.label17.TabIndex = 51;
             this.label17.Text = "Low";
             // 
@@ -511,9 +551,10 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(1189, 135);
+            this.label18.Location = new System.Drawing.Point(892, 110);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(47, 25);
+            this.label18.Size = new System.Drawing.Size(37, 20);
             this.label18.TabIndex = 50;
             this.label18.Text = "Mid";
             // 
@@ -521,9 +562,10 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(1189, 38);
+            this.label19.Location = new System.Drawing.Point(892, 31);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(56, 25);
+            this.label19.Size = new System.Drawing.Size(46, 20);
             this.label19.TabIndex = 49;
             this.label19.Text = "High";
             // 
@@ -531,9 +573,10 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(1187, 441);
+            this.label20.Location = new System.Drawing.Point(890, 358);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(47, 25);
+            this.label20.Size = new System.Drawing.Size(37, 20);
             this.label20.TabIndex = 48;
             this.label20.Text = "Mid";
             // 
@@ -541,42 +584,47 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(1183, 344);
+            this.label21.Location = new System.Drawing.Point(887, 280);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(56, 25);
+            this.label21.Size = new System.Drawing.Size(46, 20);
             this.label21.TabIndex = 47;
             this.label21.Text = "High";
             // 
             // txtTeleLowCubes
             // 
             this.txtTeleLowCubes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTeleLowCubes.Location = new System.Drawing.Point(1164, 252);
+            this.txtTeleLowCubes.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtTeleLowCubes.Location = new System.Drawing.Point(873, 206);
+            this.txtTeleLowCubes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTeleLowCubes.MaxLength = 3;
             this.txtTeleLowCubes.Multiline = true;
             this.txtTeleLowCubes.Name = "txtTeleLowCubes";
             this.txtTeleLowCubes.ReadOnly = true;
-            this.txtTeleLowCubes.Size = new System.Drawing.Size(100, 52);
+            this.txtTeleLowCubes.Size = new System.Drawing.Size(76, 36);
             this.txtTeleLowCubes.TabIndex = 46;
             this.txtTeleLowCubes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTeleLowCones
             // 
             this.txtTeleLowCones.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTeleLowCones.Location = new System.Drawing.Point(1164, 582);
+            this.txtTeleLowCones.Location = new System.Drawing.Point(873, 479);
+            this.txtTeleLowCones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTeleLowCones.MaxLength = 3;
             this.txtTeleLowCones.Multiline = true;
             this.txtTeleLowCones.Name = "txtTeleLowCones";
             this.txtTeleLowCones.ReadOnly = true;
-            this.txtTeleLowCones.Size = new System.Drawing.Size(100, 52);
+            this.txtTeleLowCones.Size = new System.Drawing.Size(76, 36);
             this.txtTeleLowCones.TabIndex = 45;
             this.txtTeleLowCones.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnSubtractLowTeleCube
             // 
             this.btnSubtractLowTeleCube.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtractLowTeleCube.Location = new System.Drawing.Point(1106, 252);
+            this.btnSubtractLowTeleCube.Location = new System.Drawing.Point(830, 205);
+            this.btnSubtractLowTeleCube.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubtractLowTeleCube.Name = "btnSubtractLowTeleCube";
-            this.btnSubtractLowTeleCube.Size = new System.Drawing.Size(52, 52);
+            this.btnSubtractLowTeleCube.Size = new System.Drawing.Size(39, 42);
             this.btnSubtractLowTeleCube.TabIndex = 44;
             this.btnSubtractLowTeleCube.Text = "-";
             this.btnSubtractLowTeleCube.UseVisualStyleBackColor = true;
@@ -585,9 +633,10 @@
             // btnSubtractLowTeleCone
             // 
             this.btnSubtractLowTeleCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtractLowTeleCone.Location = new System.Drawing.Point(1106, 582);
+            this.btnSubtractLowTeleCone.Location = new System.Drawing.Point(830, 473);
+            this.btnSubtractLowTeleCone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubtractLowTeleCone.Name = "btnSubtractLowTeleCone";
-            this.btnSubtractLowTeleCone.Size = new System.Drawing.Size(52, 52);
+            this.btnSubtractLowTeleCone.Size = new System.Drawing.Size(39, 42);
             this.btnSubtractLowTeleCone.TabIndex = 43;
             this.btnSubtractLowTeleCone.Text = "-";
             this.btnSubtractLowTeleCone.UseVisualStyleBackColor = true;
@@ -596,9 +645,10 @@
             // btnAddLowTeleCube
             // 
             this.btnAddLowTeleCube.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddLowTeleCube.Location = new System.Drawing.Point(1272, 252);
+            this.btnAddLowTeleCube.Location = new System.Drawing.Point(954, 205);
+            this.btnAddLowTeleCube.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddLowTeleCube.Name = "btnAddLowTeleCube";
-            this.btnAddLowTeleCube.Size = new System.Drawing.Size(52, 52);
+            this.btnAddLowTeleCube.Size = new System.Drawing.Size(39, 42);
             this.btnAddLowTeleCube.TabIndex = 41;
             this.btnAddLowTeleCube.Text = "+";
             this.btnAddLowTeleCube.UseVisualStyleBackColor = true;
@@ -607,9 +657,10 @@
             // btnAddLowTeleCone
             // 
             this.btnAddLowTeleCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddLowTeleCone.Location = new System.Drawing.Point(1272, 582);
+            this.btnAddLowTeleCone.Location = new System.Drawing.Point(954, 473);
+            this.btnAddLowTeleCone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddLowTeleCone.Name = "btnAddLowTeleCone";
-            this.btnAddLowTeleCone.Size = new System.Drawing.Size(52, 52);
+            this.btnAddLowTeleCone.Size = new System.Drawing.Size(39, 42);
             this.btnAddLowTeleCone.TabIndex = 42;
             this.btnAddLowTeleCone.Text = "+";
             this.btnAddLowTeleCone.UseVisualStyleBackColor = true;
@@ -618,57 +669,64 @@
             // txtTeleHighCubes
             // 
             this.txtTeleHighCubes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTeleHighCubes.Location = new System.Drawing.Point(1164, 66);
+            this.txtTeleHighCubes.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtTeleHighCubes.Location = new System.Drawing.Point(874, 59);
+            this.txtTeleHighCubes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTeleHighCubes.MaxLength = 3;
             this.txtTeleHighCubes.Multiline = true;
             this.txtTeleHighCubes.Name = "txtTeleHighCubes";
             this.txtTeleHighCubes.ReadOnly = true;
-            this.txtTeleHighCubes.Size = new System.Drawing.Size(100, 52);
+            this.txtTeleHighCubes.Size = new System.Drawing.Size(76, 36);
             this.txtTeleHighCubes.TabIndex = 40;
             this.txtTeleHighCubes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTeleHighCones
             // 
             this.txtTeleHighCones.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTeleHighCones.Location = new System.Drawing.Point(1164, 372);
+            this.txtTeleHighCones.Location = new System.Drawing.Point(873, 307);
+            this.txtTeleHighCones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTeleHighCones.MaxLength = 3;
             this.txtTeleHighCones.Multiline = true;
             this.txtTeleHighCones.Name = "txtTeleHighCones";
             this.txtTeleHighCones.ReadOnly = true;
-            this.txtTeleHighCones.Size = new System.Drawing.Size(100, 52);
+            this.txtTeleHighCones.Size = new System.Drawing.Size(76, 36);
             this.txtTeleHighCones.TabIndex = 39;
             this.txtTeleHighCones.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTeleMidCubes
             // 
             this.txtTeleMidCubes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTeleMidCubes.Location = new System.Drawing.Point(1164, 163);
+            this.txtTeleMidCubes.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtTeleMidCubes.Location = new System.Drawing.Point(873, 137);
+            this.txtTeleMidCubes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTeleMidCubes.MaxLength = 3;
             this.txtTeleMidCubes.Multiline = true;
             this.txtTeleMidCubes.Name = "txtTeleMidCubes";
             this.txtTeleMidCubes.ReadOnly = true;
-            this.txtTeleMidCubes.Size = new System.Drawing.Size(100, 52);
+            this.txtTeleMidCubes.Size = new System.Drawing.Size(76, 36);
             this.txtTeleMidCubes.TabIndex = 38;
             this.txtTeleMidCubes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTeleMidCones
             // 
             this.txtTeleMidCones.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTeleMidCones.Location = new System.Drawing.Point(1164, 469);
+            this.txtTeleMidCones.Location = new System.Drawing.Point(874, 386);
+            this.txtTeleMidCones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTeleMidCones.MaxLength = 3;
             this.txtTeleMidCones.Multiline = true;
             this.txtTeleMidCones.Name = "txtTeleMidCones";
             this.txtTeleMidCones.ReadOnly = true;
-            this.txtTeleMidCones.Size = new System.Drawing.Size(100, 52);
+            this.txtTeleMidCones.Size = new System.Drawing.Size(76, 36);
             this.txtTeleMidCones.TabIndex = 37;
             this.txtTeleMidCones.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnSubtractMidTeleCube
             // 
             this.btnSubtractMidTeleCube.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtractMidTeleCube.Location = new System.Drawing.Point(1106, 163);
+            this.btnSubtractMidTeleCube.Location = new System.Drawing.Point(830, 132);
+            this.btnSubtractMidTeleCube.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubtractMidTeleCube.Name = "btnSubtractMidTeleCube";
-            this.btnSubtractMidTeleCube.Size = new System.Drawing.Size(52, 52);
+            this.btnSubtractMidTeleCube.Size = new System.Drawing.Size(39, 42);
             this.btnSubtractMidTeleCube.TabIndex = 35;
             this.btnSubtractMidTeleCube.Text = "-";
             this.btnSubtractMidTeleCube.UseVisualStyleBackColor = true;
@@ -678,18 +736,20 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(982, 56);
+            this.label22.Location = new System.Drawing.Point(736, 46);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(110, 32);
+            this.label22.Size = new System.Drawing.Size(87, 26);
             this.label22.TabIndex = 36;
             this.label22.Text = "Cubes:";
             // 
             // btnAddMidTeleCube
             // 
             this.btnAddMidTeleCube.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMidTeleCube.Location = new System.Drawing.Point(1272, 163);
+            this.btnAddMidTeleCube.Location = new System.Drawing.Point(954, 132);
+            this.btnAddMidTeleCube.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddMidTeleCube.Name = "btnAddMidTeleCube";
-            this.btnAddMidTeleCube.Size = new System.Drawing.Size(52, 52);
+            this.btnAddMidTeleCube.Size = new System.Drawing.Size(39, 42);
             this.btnAddMidTeleCube.TabIndex = 33;
             this.btnAddMidTeleCube.Text = "+";
             this.btnAddMidTeleCube.UseVisualStyleBackColor = true;
@@ -698,9 +758,10 @@
             // btnSubtractMidTeleCone
             // 
             this.btnSubtractMidTeleCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtractMidTeleCone.Location = new System.Drawing.Point(1106, 469);
+            this.btnSubtractMidTeleCone.Location = new System.Drawing.Point(830, 381);
+            this.btnSubtractMidTeleCone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubtractMidTeleCone.Name = "btnSubtractMidTeleCone";
-            this.btnSubtractMidTeleCone.Size = new System.Drawing.Size(52, 52);
+            this.btnSubtractMidTeleCone.Size = new System.Drawing.Size(39, 42);
             this.btnSubtractMidTeleCone.TabIndex = 34;
             this.btnSubtractMidTeleCone.Text = "-";
             this.btnSubtractMidTeleCone.UseVisualStyleBackColor = true;
@@ -709,9 +770,10 @@
             // btnAddMidTeleCone
             // 
             this.btnAddMidTeleCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMidTeleCone.Location = new System.Drawing.Point(1272, 469);
+            this.btnAddMidTeleCone.Location = new System.Drawing.Point(954, 381);
+            this.btnAddMidTeleCone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddMidTeleCone.Name = "btnAddMidTeleCone";
-            this.btnAddMidTeleCone.Size = new System.Drawing.Size(52, 52);
+            this.btnAddMidTeleCone.Size = new System.Drawing.Size(39, 42);
             this.btnAddMidTeleCone.TabIndex = 32;
             this.btnAddMidTeleCone.Text = "+";
             this.btnAddMidTeleCone.UseVisualStyleBackColor = true;
@@ -721,18 +783,20 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(995, 362);
+            this.label23.Location = new System.Drawing.Point(746, 294);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(101, 32);
+            this.label23.Size = new System.Drawing.Size(80, 26);
             this.label23.TabIndex = 31;
             this.label23.Text = "Cones";
             // 
             // btnSubtractHighTeleCube
             // 
             this.btnSubtractHighTeleCube.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtractHighTeleCube.Location = new System.Drawing.Point(1106, 66);
+            this.btnSubtractHighTeleCube.Location = new System.Drawing.Point(830, 54);
+            this.btnSubtractHighTeleCube.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubtractHighTeleCube.Name = "btnSubtractHighTeleCube";
-            this.btnSubtractHighTeleCube.Size = new System.Drawing.Size(52, 52);
+            this.btnSubtractHighTeleCube.Size = new System.Drawing.Size(39, 42);
             this.btnSubtractHighTeleCube.TabIndex = 29;
             this.btnSubtractHighTeleCube.Text = "-";
             this.btnSubtractHighTeleCube.UseVisualStyleBackColor = true;
@@ -741,9 +805,10 @@
             // btnAddHighTeleCube
             // 
             this.btnAddHighTeleCube.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddHighTeleCube.Location = new System.Drawing.Point(1272, 66);
+            this.btnAddHighTeleCube.Location = new System.Drawing.Point(954, 54);
+            this.btnAddHighTeleCube.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddHighTeleCube.Name = "btnAddHighTeleCube";
-            this.btnAddHighTeleCube.Size = new System.Drawing.Size(52, 52);
+            this.btnAddHighTeleCube.Size = new System.Drawing.Size(39, 42);
             this.btnAddHighTeleCube.TabIndex = 28;
             this.btnAddHighTeleCube.Text = "+";
             this.btnAddHighTeleCube.UseVisualStyleBackColor = true;
@@ -752,9 +817,10 @@
             // btnSubtractHighTeleCone
             // 
             this.btnSubtractHighTeleCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtractHighTeleCone.Location = new System.Drawing.Point(1106, 372);
+            this.btnSubtractHighTeleCone.Location = new System.Drawing.Point(830, 302);
+            this.btnSubtractHighTeleCone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubtractHighTeleCone.Name = "btnSubtractHighTeleCone";
-            this.btnSubtractHighTeleCone.Size = new System.Drawing.Size(52, 52);
+            this.btnSubtractHighTeleCone.Size = new System.Drawing.Size(39, 42);
             this.btnSubtractHighTeleCone.TabIndex = 30;
             this.btnSubtractHighTeleCone.Text = "-";
             this.btnSubtractHighTeleCone.UseVisualStyleBackColor = true;
@@ -763,9 +829,10 @@
             // btnAddHighTeleCone
             // 
             this.btnAddHighTeleCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddHighTeleCone.Location = new System.Drawing.Point(1272, 372);
+            this.btnAddHighTeleCone.Location = new System.Drawing.Point(954, 302);
+            this.btnAddHighTeleCone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddHighTeleCone.Name = "btnAddHighTeleCone";
-            this.btnAddHighTeleCone.Size = new System.Drawing.Size(52, 52);
+            this.btnAddHighTeleCone.Size = new System.Drawing.Size(39, 42);
             this.btnAddHighTeleCone.TabIndex = 27;
             this.btnAddHighTeleCone.Text = "+";
             this.btnAddHighTeleCone.UseVisualStyleBackColor = true;
@@ -775,18 +842,20 @@
             // 
             this.label24.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(962, 332);
+            this.label24.Location = new System.Drawing.Point(722, 270);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(387, 10);
+            this.label24.Size = new System.Drawing.Size(290, 8);
             this.label24.TabIndex = 53;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(740, 299);
+            this.label25.Location = new System.Drawing.Point(555, 243);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(200, 54);
+            this.label25.Size = new System.Drawing.Size(164, 44);
             this.label25.TabIndex = 54;
             this.label25.Text = "Tele-Op";
             this.label25.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -795,9 +864,10 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(1490, 18);
+            this.label26.Location = new System.Drawing.Point(1118, 15);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(254, 54);
+            this.label26.Size = new System.Drawing.Size(209, 44);
             this.label26.TabIndex = 55;
             this.label26.Text = "End Game";
             this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -805,9 +875,10 @@
             // chkLink
             // 
             this.chkLink.AutoSize = true;
-            this.chkLink.Location = new System.Drawing.Point(1726, 135);
+            this.chkLink.Location = new System.Drawing.Point(1294, 110);
+            this.chkLink.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkLink.Name = "chkLink";
-            this.chkLink.Size = new System.Drawing.Size(18, 17);
+            this.chkLink.Size = new System.Drawing.Size(15, 14);
             this.chkLink.TabIndex = 57;
             this.chkLink.UseVisualStyleBackColor = true;
             // 
@@ -815,9 +886,10 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(1361, 89);
+            this.label27.Location = new System.Drawing.Point(1021, 72);
+            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(355, 96);
+            this.label27.Size = new System.Drawing.Size(277, 78);
             this.label27.TabIndex = 56;
             this.label27.Text = "Appeared To Coordinate \r\nAnd Score Links With\r\nAlliance";
             // 
@@ -825,9 +897,10 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(1473, 218);
+            this.label28.Location = new System.Drawing.Point(1105, 177);
+            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(243, 32);
+            this.label28.Size = new System.Drawing.Size(190, 26);
             this.label28.TabIndex = 58;
             this.label28.Text = "Charging Station";
             // 
@@ -840,9 +913,10 @@
             "Not Docked",
             "Docked & Not Engaged (unbalanced)",
             "Docked & Engaged (balanced)"});
-            this.cmbEndGameChargingStation.Location = new System.Drawing.Point(1391, 262);
+            this.cmbEndGameChargingStation.Location = new System.Drawing.Point(1043, 213);
+            this.cmbEndGameChargingStation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbEndGameChargingStation.Name = "cmbEndGameChargingStation";
-            this.cmbEndGameChargingStation.Size = new System.Drawing.Size(391, 28);
+            this.cmbEndGameChargingStation.Size = new System.Drawing.Size(294, 25);
             this.cmbEndGameChargingStation.TabIndex = 59;
             // 
             // btnExit
@@ -850,9 +924,10 @@
             this.btnExit.BackColor = System.Drawing.Color.Red;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(1783, 7);
+            this.btnExit.Location = new System.Drawing.Point(1337, 6);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(52, 52);
+            this.btnExit.Size = new System.Drawing.Size(39, 42);
             this.btnExit.TabIndex = 61;
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -861,9 +936,10 @@
             // button24
             // 
             this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.Location = new System.Drawing.Point(1658, 646);
+            this.button24.Location = new System.Drawing.Point(1244, 525);
+            this.button24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(163, 52);
+            this.button24.Size = new System.Drawing.Size(122, 42);
             this.button24.TabIndex = 62;
             this.button24.Text = "Submit";
             this.button24.UseVisualStyleBackColor = true;
@@ -872,9 +948,10 @@
             // btnNotes
             // 
             this.btnNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNotes.Location = new System.Drawing.Point(1429, 646);
+            this.btnNotes.Location = new System.Drawing.Point(1072, 525);
+            this.btnNotes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNotes.Name = "btnNotes";
-            this.btnNotes.Size = new System.Drawing.Size(163, 52);
+            this.btnNotes.Size = new System.Drawing.Size(122, 42);
             this.btnNotes.TabIndex = 63;
             this.btnNotes.Text = "Notes";
             this.btnNotes.UseVisualStyleBackColor = true;
@@ -884,9 +961,10 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(11, 9);
+            this.label29.Location = new System.Drawing.Point(8, 7);
+            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(213, 32);
+            this.label29.Size = new System.Drawing.Size(169, 26);
             this.label29.TabIndex = 65;
             this.label29.Text = "Team Number:";
             // 
@@ -902,29 +980,32 @@
             "Red 1",
             "Red 2",
             "Red 3"});
-            this.cmbPosition.Location = new System.Drawing.Point(12, 136);
+            this.cmbPosition.Location = new System.Drawing.Point(9, 110);
+            this.cmbPosition.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbPosition.Name = "cmbPosition";
-            this.cmbPosition.Size = new System.Drawing.Size(212, 37);
+            this.cmbPosition.Size = new System.Drawing.Size(160, 30);
             this.cmbPosition.TabIndex = 66;
             // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(12, 95);
+            this.label30.Location = new System.Drawing.Point(9, 77);
+            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(134, 32);
+            this.label30.Size = new System.Drawing.Size(105, 26);
             this.label30.TabIndex = 67;
             this.label30.Text = "Position:";
             // 
             // txtMatchNumber
             // 
             this.txtMatchNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatchNumber.Location = new System.Drawing.Point(159, 209);
+            this.txtMatchNumber.Location = new System.Drawing.Point(119, 170);
+            this.txtMatchNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMatchNumber.MaxLength = 3;
             this.txtMatchNumber.Multiline = true;
             this.txtMatchNumber.Name = "txtMatchNumber";
-            this.txtMatchNumber.Size = new System.Drawing.Size(65, 34);
+            this.txtMatchNumber.Size = new System.Drawing.Size(50, 28);
             this.txtMatchNumber.TabIndex = 68;
             this.txtMatchNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtMatchNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTeamNumber_KeyPress);
@@ -933,9 +1014,10 @@
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(8, 179);
+            this.label31.Location = new System.Drawing.Point(6, 145);
+            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(129, 64);
+            this.label31.Size = new System.Drawing.Size(103, 52);
             this.label31.TabIndex = 69;
             this.label31.Text = "Match\r\nNumber:";
             // 
@@ -943,11 +1025,12 @@
             // 
             this.txtTeamNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTeamNumber.HideSelection = false;
-            this.txtTeamNumber.Location = new System.Drawing.Point(12, 53);
+            this.txtTeamNumber.Location = new System.Drawing.Point(9, 43);
+            this.txtTeamNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTeamNumber.MaxLength = 4;
             this.txtTeamNumber.Multiline = true;
             this.txtTeamNumber.Name = "txtTeamNumber";
-            this.txtTeamNumber.Size = new System.Drawing.Size(212, 34);
+            this.txtTeamNumber.Size = new System.Drawing.Size(160, 28);
             this.txtTeamNumber.TabIndex = 64;
             this.txtTeamNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtTeamNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTeamNumber_KeyPress);
@@ -956,17 +1039,19 @@
             // 
             this.label32.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(1383, 299);
+            this.label32.Location = new System.Drawing.Point(1037, 243);
+            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(468, 10);
+            this.label32.Size = new System.Drawing.Size(351, 8);
             this.label32.TabIndex = 70;
             // 
             // chkFloor
             // 
             this.chkFloor.AutoSize = true;
-            this.chkFloor.Location = new System.Drawing.Point(1668, 397);
+            this.chkFloor.Location = new System.Drawing.Point(1251, 323);
+            this.chkFloor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkFloor.Name = "chkFloor";
-            this.chkFloor.Size = new System.Drawing.Size(18, 17);
+            this.chkFloor.Size = new System.Drawing.Size(15, 14);
             this.chkFloor.TabIndex = 71;
             this.chkFloor.UseVisualStyleBackColor = true;
             // 
@@ -974,9 +1059,10 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(1529, 314);
+            this.label33.Location = new System.Drawing.Point(1147, 255);
+            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(157, 54);
+            this.label33.Size = new System.Drawing.Size(128, 44);
             this.label33.TabIndex = 72;
             this.label33.Text = "Intake";
             this.label33.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -985,9 +1071,10 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(1361, 383);
+            this.label34.Location = new System.Drawing.Point(1021, 311);
+            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(269, 32);
+            this.label34.Size = new System.Drawing.Size(212, 26);
             this.label34.TabIndex = 73;
             this.label34.Text = "Picked up off Floor";
             // 
@@ -995,18 +1082,20 @@
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(1361, 458);
+            this.label35.Location = new System.Drawing.Point(1021, 372);
+            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(270, 32);
+            this.label35.Size = new System.Drawing.Size(213, 26);
             this.label35.TabIndex = 75;
             this.label35.Text = "Picked up off Shelf";
             // 
             // chkShelf
             // 
             this.chkShelf.AutoSize = true;
-            this.chkShelf.Location = new System.Drawing.Point(1668, 472);
+            this.chkShelf.Location = new System.Drawing.Point(1251, 384);
+            this.chkShelf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkShelf.Name = "chkShelf";
-            this.chkShelf.Size = new System.Drawing.Size(18, 17);
+            this.chkShelf.Size = new System.Drawing.Size(15, 14);
             this.chkShelf.TabIndex = 74;
             this.chkShelf.UseVisualStyleBackColor = true;
             // 
@@ -1014,20 +1103,21 @@
             // 
             this.txtNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNotes.HideSelection = false;
-            this.txtNotes.Location = new System.Drawing.Point(12, 719);
+            this.txtNotes.Location = new System.Drawing.Point(9, 584);
+            this.txtNotes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNotes.MaxLength = 1000;
             this.txtNotes.Multiline = true;
             this.txtNotes.Name = "txtNotes";
-            this.txtNotes.Size = new System.Drawing.Size(1823, 34);
+            this.txtNotes.Size = new System.Drawing.Size(1368, 28);
             this.txtNotes.TabIndex = 76;
             this.txtNotes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtNotes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNotes_KeyPress);
             // 
             // frmData
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1919, 740);
+            this.ClientSize = new System.Drawing.Size(1167, 601);
             this.Controls.Add(this.txtNotes);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.chkShelf);
@@ -1113,6 +1203,7 @@
             this.Controls.Add(this.btnSubtractHighAutoCone);
             this.Controls.Add(this.btnAddHighAutoCone);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmData";
             this.Text = "Scouting Program";
             this.Load += new System.EventHandler(this.Form1_Load);
