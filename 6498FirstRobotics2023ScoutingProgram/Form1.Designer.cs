@@ -98,7 +98,7 @@
             this.cmbEndGameChargingStation = new System.Windows.Forms.ComboBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
+            this.btnNotes = new System.Windows.Forms.Button();
             this.label29 = new System.Windows.Forms.Label();
             this.cmbPosition = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
@@ -111,6 +111,7 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.chkShelf = new System.Windows.Forms.CheckBox();
+            this.txtNotes = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnAddHighAutoCone
@@ -179,7 +180,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(715, -10);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(10, 838);
+            this.label5.Size = new System.Drawing.Size(10, 721);
             this.label5.TabIndex = 8;
             // 
             // txtAutoMidCones
@@ -868,15 +869,16 @@
             this.button24.UseVisualStyleBackColor = true;
             this.button24.Click += new System.EventHandler(this.button24_Click_1);
             // 
-            // button25
+            // btnNotes
             // 
-            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.Location = new System.Drawing.Point(1429, 646);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(163, 52);
-            this.button25.TabIndex = 63;
-            this.button25.Text = "Notes";
-            this.button25.UseVisualStyleBackColor = true;
+            this.btnNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotes.Location = new System.Drawing.Point(1429, 646);
+            this.btnNotes.Name = "btnNotes";
+            this.btnNotes.Size = new System.Drawing.Size(163, 52);
+            this.btnNotes.TabIndex = 63;
+            this.btnNotes.Text = "Notes";
+            this.btnNotes.UseVisualStyleBackColor = true;
+            this.btnNotes.Click += new System.EventHandler(this.button25_Click);
             // 
             // label29
             // 
@@ -1008,11 +1010,25 @@
             this.chkShelf.TabIndex = 74;
             this.chkShelf.UseVisualStyleBackColor = true;
             // 
+            // txtNotes
+            // 
+            this.txtNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNotes.HideSelection = false;
+            this.txtNotes.Location = new System.Drawing.Point(12, 719);
+            this.txtNotes.MaxLength = 1000;
+            this.txtNotes.Multiline = true;
+            this.txtNotes.Name = "txtNotes";
+            this.txtNotes.Size = new System.Drawing.Size(1823, 34);
+            this.txtNotes.TabIndex = 76;
+            this.txtNotes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNotes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNotes_KeyPress);
+            // 
             // frmData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1919, 710);
+            this.ClientSize = new System.Drawing.Size(1919, 740);
+            this.Controls.Add(this.txtNotes);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.chkShelf);
             this.Controls.Add(this.label34);
@@ -1025,7 +1041,7 @@
             this.Controls.Add(this.cmbPosition);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.txtTeamNumber);
-            this.Controls.Add(this.button25);
+            this.Controls.Add(this.btnNotes);
             this.Controls.Add(this.button24);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.cmbEndGameChargingStation);
@@ -1175,7 +1191,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox txtAutoLowCones;
         private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button btnNotes;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.ComboBox cmbPosition;
         private System.Windows.Forms.Label label30;
@@ -1190,6 +1206,7 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.CheckBox chkShelf;
+        private System.Windows.Forms.TextBox txtNotes;
     }
 }
 

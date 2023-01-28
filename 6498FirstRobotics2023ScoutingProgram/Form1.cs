@@ -23,7 +23,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
         //list of textboxes used to prevent unsaved data from changing
         List<TextBox> unsavedData = new List<TextBox>();
         bool dataNotSaved = false;
-
+        bool notesOpened = false;
         private void Form1_Load(object sender, EventArgs e)
         {
             //puts form in a single spot since the window is undraggable.
@@ -32,6 +32,8 @@ namespace _6498FirstRobotics2023ScoutingProgram
             this.Height = 577;
             this.CenterToScreen();
             this.Top -= 100;
+            txtNotes.Height = 110;
+            txtNotes.Width += 15;
             #endregion 
 
             cmbPosition.SelectedIndex = 0; //only does this in the beginning to prevent resetting alliance position during actual gameplay.
@@ -41,7 +43,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
         }
 
 
-        private void button24_Click(object sender, EventArgs e) 
+        private void button24_Click(object sender, EventArgs e)
         {
             //this button acts as an alt+f4, unless data has been changed.
             //If it has, it will give a popup showing unsaved entries are present.
@@ -64,7 +66,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
 
             if (dataNotSaved)
             {
-                DialogResult dialogResult = MessageBox.Show("Would you like to discard your currently unsaved data?\nWARNING: It cannot be recovered if you select \"Yes\"", "UNSAVED DATA DETECTED", MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show("Would you like to discard your currently unsaved data?\nWARNING: It cannot be recovered if you select \"Yes\"", "UNSAVED DATA DETECTED", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
                 if (dialogResult == DialogResult.Yes)
                 {
                     Application.Exit();
@@ -75,7 +77,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
                 Application.Exit();
             }
 
-            
+
         }
 
         private void ResetInputs()
@@ -101,7 +103,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
             txtTeamNumber.Text = null;
             txtMatchNumber.Text = null;
             //resets checkboxes
-            chkMobility.Checked= false;
+            chkMobility.Checked = false;
             chkLink.Checked = false;
             chkShelf.Checked = false;
             chkFloor.Checked = false;
@@ -109,7 +111,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
             cmbAutoCharge.SelectedIndex = 0;
             cmbEndGameChargingStation.SelectedIndex = 0;
 
-            
+
         }
 
         private void button24_Click_1(object sender, EventArgs e)
@@ -223,6 +225,32 @@ namespace _6498FirstRobotics2023ScoutingProgram
             //prevents non numeric characters from being put into the textbox
             //done to prevent accidental commas that could mess up the .CSV file that is exported.
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            if (notesOpened == false)
+            {
+                this.Height += 125;
+                notesOpened = true;
+                btnNotes.Text = "Collapse";
+            } else if (notesOpened == true) {
+                this.Height -= 125;
+                notesOpened = false;
+                btnNotes.Text = "Notes";
+            }
+        }
+
+        private void txtNotes_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && !char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            if (e.KeyChar == Convert.ToChar(","))
             {
                 e.Handled = true;
             }
