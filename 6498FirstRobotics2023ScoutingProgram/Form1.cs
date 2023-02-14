@@ -98,10 +98,11 @@ namespace _6498FirstRobotics2023ScoutingProgram
             txtTeleHighCubes.Text = "0";
             txtTeleMidCubes.Text = "0";
             txtTeleLowCubes.Text = "0";
-            //-------------------------------------------------------------------------
+            //---------------------------------------//
             //resets indentifying info about the robot.
             txtTeamNumber.Text = null;
             txtMatchNumber.Text = null;
+
             //resets checkboxes
             chkMobility.Checked = false;
             chkLink.Checked = false;
@@ -116,6 +117,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
 
         private void button24_Click_1(object sender, EventArgs e)
         {
+            RecordDataIntoCSV();
             ResetInputs();
         }
 
@@ -251,10 +253,46 @@ namespace _6498FirstRobotics2023ScoutingProgram
                 e.Handled = true;
             }
 
-            if (e.KeyChar == Convert.ToChar(","))
+            if (e.KeyChar == Convert.ToChar(",") || e.KeyChar == Convert.ToChar("\r") || e.KeyChar == Convert.ToChar("\n"))
             {
                 e.Handled = true;
             }
+        }
+
+        private void RecordDataIntoCSV()
+        {
+            string autoHighCones, autoMidCones, autoLowCones, autoHighCubes, autoMidCubes, autoLowCubes = "";
+            string teleHighCones, teleMidCones, teleLowCones, teleHighCubes, teleMidCubes, teleLowCubes = "";
+            string teamNumber = "";
+            string matchNumber = "";
+            string position, autoBalance, endBalance = "";
+            string mobility, links, floorIntake, shelfIntake = "";
+
+            string header = "TeamNumber,Position,MatchNumber,MobilityAchieved,AutoHighCones,AutoMidCones,AutoLowCones,AutoHighCubes,AutoMidCubes,AutoLowCubes,AutoChargingStationPosition,TeleHighCones,TeleMidCones,TeleLowCones,TeleHighCubes,TeleMidCubes,TeleLowCubes,EndGameChargingStation,LinkCoordination,FloorPickup,ShelfPickup,Notes";
+
+            teamNumber = txtTeamNumber.Text;
+            position = cmbPosition.Text;
+            matchNumber = txtMatchNumber.Text;
+
+            autoHighCones = txtAutoHighCones.Text;
+            autoMidCones= txtAutoMidCones.Text;
+            autoLowCones = txtAutoLowCones.Text;
+
+            autoHighCubes = txtAutoHighCubes.Text;
+            autoMidCubes = txtAutoMidCubes.Text;
+            autoLowCubes = txtAutoLowCubes.Text;
+
+            autoBalance = cmbPosition.Text;
+
+            mobility = chkMobility.Checked.ToString();
+
+
+
+            
+
+
+
+
         }
     }
 }
