@@ -112,7 +112,7 @@
             this.label35 = new System.Windows.Forms.Label();
             this.chkShelf = new System.Windows.Forms.CheckBox();
             this.txtNotes = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkPark = new System.Windows.Forms.CheckBox();
             this.label36 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -1079,15 +1079,15 @@
             this.txtNotes.TabIndex = 76;
             this.txtNotes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNotes_KeyPress);
             // 
-            // checkBox1
+            // chkPark
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(1725, 320);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(18, 17);
-            this.checkBox1.TabIndex = 78;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkPark.AutoSize = true;
+            this.chkPark.Location = new System.Drawing.Point(1725, 320);
+            this.chkPark.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkPark.Name = "chkPark";
+            this.chkPark.Size = new System.Drawing.Size(18, 17);
+            this.chkPark.TabIndex = 78;
+            this.chkPark.UseVisualStyleBackColor = true;
             // 
             // label36
             // 
@@ -1104,7 +1104,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1869, 740);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.chkPark);
             this.Controls.Add(this.label36);
             this.Controls.Add(this.txtNotes);
             this.Controls.Add(this.label35);
@@ -1286,7 +1286,7 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.CheckBox chkShelf;
         private System.Windows.Forms.TextBox txtNotes;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkPark;
         private System.Windows.Forms.Label label36;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -24,8 +25,43 @@ namespace _6498FirstRobotics2023ScoutingProgram
         List<TextBox> unsavedData = new List<TextBox>();
         bool dataNotSaved = false;
         bool notesOpened = false;
+        // "Team Number,Position,Match Number,Mobility Achieved,Auto High Cones,Auto Mid Cones,Auto Low Cones,
+        // Auto High Cubes,Auto Mid Cubes,Auto Low Cubes,Auto Charging Station Position,
+        // Tele High Cones,Tele Mid Cones,Tele Low Cones,Tele High Cubes,Tele Mid Cubes,Tele Low Cubes,
+        // End Game Charging Station,Link Coordination,Parked,Floor Pickup,Shelf Pickup,Notes";
+        //
+        Dictionary<string, List<string>> data = new Dictionary<string, List<string>>
+        {
+            {"Team Number", new List<string>() },
+            {"Position", new List<string>()},
+            {"Match Number", new List<string>()},
+            {"Mobility Achieved", new List<string>()},
+            {"Auto High Cones", new List<string>() },
+            {"Auto Mid Cones", new List<string>()},
+            {"Auto Low Cones", new List<string>()},
+            {"Auto High Cubes", new List<string>()},
+            {"Auto Mid Cubes", new List<string>()},
+            {"Auto Low Cubes", new List<string>()},
+            {"Auto Charging Station Position", new List<string>() },
+            {"Tele High Cones", new List<string>() },
+            {"Tele Mid Cones", new List<string>()},
+            {"Tele Low Cones", new List<string>()},
+            {"Tele High Cubes", new List<string>()},
+            {"Tele Mid Cubes", new List<string>()},
+            {"Tele Low Cubes", new List<string>()},
+            {"End Game Charging Station", new List<string>() },
+            {"Link Coordination", new List<string>()},
+            {"Parked", new List<string>()},
+            {"Floor Pickup", new List<string>()},
+            {"Shelf Pickup", new List<string>()}
+
+        };
+        
+        //string[] test = new string[5] { "notes", "ata", "testing", "reset", "finalSlot"};
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             //puts form in a single spot since the window is undraggable.
             #region Setup of form size
             this.Width = 1400;
@@ -261,34 +297,55 @@ namespace _6498FirstRobotics2023ScoutingProgram
 
         private void RecordDataIntoCSV()
         {
-            string autoHighCones, autoMidCones, autoLowCones, autoHighCubes, autoMidCubes, autoLowCubes = "";
-            string teleHighCones, teleMidCones, teleLowCones, teleHighCubes, teleMidCubes, teleLowCubes = "";
-            string teamNumber = "";
-            string matchNumber = "";
-            string position, autoBalance, endBalance = "";
-            string mobility, links, floorIntake, shelfIntake = "";
+            #region inefficient, improving with the use of dictionaries
+            //string autoHighCones, autoMidCones, autoLowCones, autoHighCubes, autoMidCubes, autoLowCubes = "";
+            //string teleHighCones, teleMidCones, teleLowCones, teleHighCubes, teleMidCubes, teleLowCubes = "";
+            //string teamNumber = "";
+            //string matchNumber = "";
+            //string position, autoBalance, endBalance = "";
+            //string mobility, links, parked, floorIntake, shelfIntake = "";
 
-            string header = "TeamNumber,Position,MatchNumber,MobilityAchieved,AutoHighCones,AutoMidCones,AutoLowCones,AutoHighCubes,AutoMidCubes,AutoLowCubes,AutoChargingStationPosition,TeleHighCones,TeleMidCones,TeleLowCones,TeleHighCubes,TeleMidCubes,TeleLowCubes,EndGameChargingStation,LinkCoordination,FloorPickup,ShelfPickup,Notes";
+            //teamNumber = txtTeamNumber.Text;
+            //position = cmbPosition.Text;
+            //matchNumber = txtMatchNumber.Text;
 
-            teamNumber = txtTeamNumber.Text;
-            position = cmbPosition.Text;
-            matchNumber = txtMatchNumber.Text;
+            //autoHighCones = txtAutoHighCones.Text;
+            //autoMidCones= txtAutoMidCones.Text;
+            //autoLowCones = txtAutoLowCones.Text;
 
-            autoHighCones = txtAutoHighCones.Text;
-            autoMidCones= txtAutoMidCones.Text;
-            autoLowCones = txtAutoLowCones.Text;
+            //autoHighCubes = txtAutoHighCubes.Text;
+            //autoMidCubes = txtAutoMidCubes.Text;
+            //autoLowCubes = txtAutoLowCubes.Text;
 
-            autoHighCubes = txtAutoHighCubes.Text;
-            autoMidCubes = txtAutoMidCubes.Text;
-            autoLowCubes = txtAutoLowCubes.Text;
+            //autoBalance = cmbAutoCharge.Text;
 
-            autoBalance = cmbPosition.Text;
+            //mobility = chkMobility.Checked.ToString();
 
-            mobility = chkMobility.Checked.ToString();
+            //teleHighCones = txtTeleHighCones.Text;
+            //teleMidCones= txtTeleMidCones.Text;
+            //teleLowCones= txtTeleLowCones.Text;
 
+            //teleHighCubes = txtTeleHighCubes.Text;
+            //teleMidCubes = txtTeleMidCubes.Text;
+            //teleLowCubes = txtTeleLowCubes.Text;
 
+            //links = chkLink.Checked.ToString();
+            //endBalance = cmbEndGameChargingStation.Text;
+            //parked = chkPark.Checked.ToString();
 
-            
+            //floorIntake = chkFloor.Checked.ToString();
+            //shelfIntake = chkShelf.Checked.ToString();
+
+            //string header = "Team Number,Position,Match Number,Mobility Achieved,Auto High Cones,Auto Mid Cones,Auto Low Cones,Auto High Cubes,Auto Mid Cubes,Auto Low Cubes,Auto Charging Station Position,Tele High Cones,Tele Mid Cones,Tele Low Cones,Tele High Cubes,Tele Mid Cubes,Tele Low Cubes,End Game Charging Station,Link Coordination,Parked,Floor Pickup,Shelf Pickup,Notes";
+            #endregion
+
+            string header = "";
+
+            foreach (KeyValuePair<string, List<string>> i in data)
+            {
+                header += (i.Key+ ",");
+            }
+            MessageBox.Show(header);
 
 
 
