@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static _6498FirstRobotics2023ScoutingProgram.Program;
 
 namespace _6498FirstRobotics2023ScoutingProgram
 {
@@ -56,7 +57,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
             {"Shelf Pickup", new List<string>()}
 
         };
-        
+
         //string[] test = new string[5] { "notes", "ata", "testing", "reset", "finalSlot"};
 
         private void Form1_Load(object sender, EventArgs e)
@@ -68,18 +69,220 @@ namespace _6498FirstRobotics2023ScoutingProgram
             this.Height = 577;
             this.CenterToScreen();
             this.Top -= 100;
-            txtNotes.Height = 110;
-            txtNotes.Width += 15;
+            tb_Notes.Height = 110;
+            tb_Notes.Width += 15;
             #endregion 
 
-            cmbPosition.SelectedIndex = 0; //only does this in the beginning to prevent resetting alliance position during actual gameplay.
+            cmb_Info_Position.SelectedIndex = 0; //only does this in the beginning to prevent resetting alliance position during actual gameplay.
             //sets up the ability of the users to be able to input values
             ResetInputs();
             ButtonDeclaration();
         }
 
+        //Broke out a region for things that only occur on form load
+        #region Form Initializations
+        /* This is clever and I like it, but I'm setting it to use the names of the textbox controls
+         * so it's future proofed if the names ever need to be changed again.  Not necessary,
+         * but it's a good practice to be somewhat prepared for change.
+        */
+        private void ButtonDeclaration()
+        {
+            //defines all of the corresponding textboxes for each button,
+            //allowing for the program to read the tag and pass it through to affect the value of the corresponding textbox.
+            #region Positive Buttons
+            btn_Auto_ConeHighAdd.Tag = tb_Auto_ConeHigh.Name;
+            btn_Auto_ConeMidAdd.Tag = tb_Auto_ConeMid.Name;
+            btn_Auto_ConeLowAdd.Tag = tb_Auto_ConeLow.Name;
 
-        private void button24_Click(object sender, EventArgs e)
+            btn_Auto_CubeHighAdd.Tag = tb_Auto_CubeHigh.Name;
+            btn_Auto_CubeMidAdd.Tag = tb_Auto_CubeMid.Name;
+            btn_Auto_CubeLowAdd.Tag = tb_Auto_CubeLow.Name;
+
+            btn_TeleOp_ConeHighAdd.Tag = tb_TeleOp_ConeHigh.Name;
+            btn_TeleOp_ConeMidAdd.Tag = tb_TeleOp_ConeMid.Name;
+            btn_TeleOp_ConeLowAdd.Tag = tb_TeleOp_ConeLow.Name;
+
+            btn_TeleOp_CubeHighAdd.Tag = tb_TeleOp_CubeHigh.Name;
+            btn_TeleOp_CubeMidAdd.Tag = tb_TeleOp_CubeMid.Name;
+            btn_TeleOp_CubeLowAdd.Tag = tb_TeleOp_CubeLow.Name;
+            #endregion
+
+            //This structure is fine, but if you would like, each textbox control can be onelined cleanly like the below example
+            /* 
+             *    btn_Auto_ConeHighAdd.Tag = btn_Auto_ConeHighSub.Tag = tb_Auto_ConeHigh.Name;
+             * 
+             *     as long as they are both the correct buttons for the intended textbox
+             */
+
+            //does the same process for the buttons that subtract.
+            #region Negative Buttons
+            btn_Auto_ConeHighSub.Tag = tb_Auto_ConeHigh.Name;
+            btn_Auto_ConeMidSub.Tag = tb_Auto_ConeMid.Name;
+            btn_Auto_ConeLowSub.Tag = tb_Auto_ConeLow.Name;
+
+            btn_Auto_CubeHighSub.Tag = tb_Auto_CubeHigh.Name;
+            btn_Auto_CubeMidSub.Tag = tb_Auto_CubeMid.Name;
+            btn_Auto_CubeLowSub.Tag = tb_Auto_CubeLow.Name;
+
+            btn_TeleOp_ConeHighSub.Tag = tb_TeleOp_ConeHigh.Name;
+            btn_TeleOp_ConeMidSub.Tag = tb_TeleOp_ConeMid.Name;
+            btn_TeleOp_ConeLowSub.Tag = tb_TeleOp_ConeLow.Name;
+
+            btn_TeleOp_CubeHighSub.Tag = tb_TeleOp_CubeHigh.Name;
+            btn_TeleOp_CubeMidSub.Tag = tb_TeleOp_CubeMid.Name;
+            btn_TeleOp_CubeLowSub.Tag = tb_TeleOp_CubeLow.Name;
+            #endregion
+
+            #region Textbox Addition to the list checking system.
+            unsavedData.Add(tb_Auto_ConeHigh);
+            unsavedData.Add(tb_Auto_ConeMid);
+            unsavedData.Add(tb_Auto_ConeLow);
+
+            unsavedData.Add(tb_Auto_CubeHigh);
+            unsavedData.Add(tb_Auto_CubeMid);
+            unsavedData.Add(tb_Auto_CubeLow);
+
+            unsavedData.Add(tb_TeleOp_ConeHigh);
+            unsavedData.Add(tb_TeleOp_ConeMid);
+            unsavedData.Add(tb_TeleOp_ConeLow);
+
+            unsavedData.Add(tb_TeleOp_CubeHigh);
+            unsavedData.Add(tb_TeleOp_CubeMid);
+            unsavedData.Add(tb_TeleOp_CubeLow);
+            #endregion
+        }
+        private void ResetInputs()
+        {
+            //resets auto cones
+            tb_Auto_ConeHigh.Text = "0";
+            tb_Auto_ConeMid.Text = "0";
+            tb_Auto_ConeLow.Text = "0";
+            //rests auto cubes
+            tb_Auto_CubeHigh.Text = "0";
+            tb_Auto_CubeMid.Text = "0";
+            tb_Auto_CubeLow.Text = "0";
+            //resets the tele cones
+            tb_TeleOp_ConeHigh.Text = "0";
+            tb_TeleOp_ConeMid.Text = "0";
+            tb_TeleOp_ConeLow.Text = "0";
+            //resets tele cubes
+            tb_TeleOp_CubeHigh.Text = "0";
+            tb_TeleOp_CubeMid.Text = "0";
+            tb_TeleOp_CubeLow.Text = "0";
+            //---------------------------------------//
+            //resets indentifying info about the robot.
+            tb_Info_TeamNumber.Text = null;
+            tb_Info_MatchNumber.Text = null;
+
+            //resets checkboxes
+            chk_Auto_Community.Checked = false;
+            chk_EndGame_Coordination.Checked = false;
+            chk_Intake_Shelf.Checked = false;
+            chk_Intake_Floor.Checked = false;
+            //sets the default value to the [0] item in the list, which is technically the first, as a default.
+            cmb_Auto_Station.SelectedIndex = 0;
+            cmb_EndGame_Station.SelectedIndex = 0;
+
+            tb_Notes.Text = null;
+        }
+        #endregion
+
+
+        //More regions for this too
+        #region Increment / decrement buttons
+        private void IncrementValue(object sender, int value /*,bool add*/)
+        {
+            /* In all what's happening here, is we are putting the current value to an int first,
+             * then we are changing it.  Basically the same, but hopefully easier to read what is happening
+             * and a bit less visual clutter
+             * 
+             * Also as you can see below, using (newType)variable or "Casting" vs using the "as" keyword both
+             * work, so you can figure out which one you want to use here, I personally like "as" since it
+             * feels a bit more readable
+             */
+
+
+            //takes the name of the corresponding textbox to the button and passes it into this line of code
+            Button button = (Button)sender;
+            string buttonTag = button.Tag.ToString();
+            //Assigning these their own variables helps with clarity, it looks at the parent of the button to find the control since panels knida mess with looking directly at controls
+            TextBox buttonBox = (button.Parent.Controls[buttonTag]) as TextBox;
+            int currentValue = int.Parse(buttonBox.Text);
+            //Increment 'current value', turn it back to a string, and set it to the textbox
+            buttonBox.Text = Math.Max(0, currentValue + value).ToString();
+
+
+
+            /* This is a fine way to do it, but since we already have the separate events
+             * for pressing a + vs a - button, we can do something a lil bit easier
+             */
+
+            /*if (add)
+            {
+                //what this line does is it takes the corresponding tag on the button (declared in ButtonDeclaration()) and whenever one is clicked
+                //it will increase the value by one
+                this.Controls[buttonTag].Text = (Convert.ToInt16(this.Controls[buttonTag].Text) + 1).ToString();
+            }
+            else
+            {
+                //checks the value of the corresponding textbox to see if it is >0.
+                //if yes, the value will drop by one, that way the minimum value in the textbox is "0"
+                if (Convert.ToInt16(this.Controls[buttonTag].Text) > 0)
+                {
+                    this.Controls[buttonTag].Text = (Convert.ToInt16(this.Controls[buttonTag].Text) - 1).ToString();
+                }
+            }*/
+        }
+
+
+        //Also for both of them, it is perfectly fine to just pass the sender further down
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            //takes the button that was clicked and turns it into a passthrough into the next subprogram
+            //var button = sender;
+            //specifically told to add one to the corresponding button
+            IncrementValue(sender, 1);
+        }
+
+        private void btn_Sub_Click(object sender, EventArgs e)
+        {
+            //takes the button that was clicked and turns it into a passthrough into the next subprogram
+            //var button = sender;
+            //specifically told to add one to the corresponding button
+            //subtracts 1 from the value if there is one to subtract.
+            IncrementValue(sender, -1);
+        }
+        #endregion
+
+
+        //Regions are really nice for keeping things sorted
+        #region Misc buttons
+        private void btn_ShowNotes_Click(object sender, EventArgs e)
+        {
+            /* Usually when checking a bool, you don't need to check it against any value.  With that, you
+             * also don't need to 'else if', since the only other condition (false) is always going to be
+             * caught by an 'else'
+             */
+            if (!notesOpened)
+            {
+                this.Height += 125;
+                notesOpened = true;
+                btn_ShowNotes.Text = "Collapse";
+            } else {
+                this.Height -= 125;
+                notesOpened = false;
+                btn_ShowNotes.Text = "Notes";
+            }
+        }
+
+        private void btn_Submit_Click(object sender, EventArgs e)
+        {
+            //We might want to change this into adding to the dictionary
+            RecordDataIntoCSV(data);
+            ResetInputs();
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
         {
             //this button acts as an alt+f4, unless data has been changed.
             //If it has, it will give a popup showing unsaved entries are present.
@@ -94,7 +297,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
                 }
             }
 
-            if (txtTeamNumber.Text != "" || txtMatchNumber.Text != "" || txtNotes.Text != "" || cmbAutoCharge.SelectedIndex != 0 || cmbEndGameChargingStation.SelectedIndex != 0 || chkFloor.Checked == true || chkLink.Checked == true || chkMobility.Checked == true || chkShelf.Checked == true)
+            if (tb_Info_TeamNumber.Text != "" || tb_Info_MatchNumber.Text != "" || tb_Notes.Text != "" || cmb_Auto_Station.SelectedIndex != 0 || cmb_EndGame_Station.SelectedIndex != 0 || chk_Intake_Floor.Checked == true || chk_EndGame_Coordination.Checked == true || chk_Auto_Community.Checked == true || chk_Intake_Shelf.Checked == true)
             {
                 dataNotSaved = true;
             }
@@ -115,241 +318,27 @@ namespace _6498FirstRobotics2023ScoutingProgram
 
 
         }
+        #endregion
 
-        private void ResetInputs()
+        //Same thing for the 'intercepts', maybe wrong term but for intercepting 'illegal' keypresses
+        #region Keypress Intercepts
+        private void tb_Notes_Keypress(object sender, KeyPressEventArgs e)
         {
-            //resets auto cones
-            txtAutoHighCones.Text = "0";
-            txtAutoMidCones.Text = "0";
-            txtAutoLowCones.Text = "0";
-            //rests auto cubes
-            txtAutoHighCubes.Text = "0";
-            txtAutoMidCubes.Text = "0";
-            txtAutoLowCubes.Text = "0";
-            //resets the tele cones
-            txtTeleHighCones.Text = "0";
-            txtTeleMidCones.Text = "0";
-            txtTeleLowCones.Text = "0";
-            //resets tele cubes
-            txtTeleHighCubes.Text = "0";
-            txtTeleMidCubes.Text = "0";
-            txtTeleLowCubes.Text = "0";
-            //---------------------------------------//
-            //resets indentifying info about the robot.
-            txtTeamNumber.Text = null;
-            txtMatchNumber.Text = null;
-
-            //resets checkboxes
-            chkMobility.Checked = false;
-            chkLink.Checked = false;
-            chkShelf.Checked = false;
-            chkFloor.Checked = false;
-            //sets the default value to the [0] item in the list, which is technically the first, as a default.
-            cmbAutoCharge.SelectedIndex = 0;
-            cmbEndGameChargingStation.SelectedIndex = 0;
-
-            txtNotes.Text = null;
+            //General forbidden characters
+            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && !char.IsPunctuation(e.KeyChar)) e.Handled = true;
+            //Specific forbidden characters
+            if (e.KeyChar == Convert.ToChar(",") || e.KeyChar == Convert.ToChar("\r") || e.KeyChar == Convert.ToChar("\n")) e.Handled = true;
         }
 
-        private void button24_Click_1(object sender, EventArgs e)
-        {
-            RecordDataIntoCSV();
-            ResetInputs();
-        }
-
-        private void IncreaseValue(object sender, bool add)
-        {
-            //takes the name of the corresponding textbox to the button and passes it into this line of code
-            Button y = (Button)sender;
-            string x = y.Tag.ToString();
-
-            if (add == true)
-            {
-                //what this line does is it takes the corresponding tag on the button (declared in ButtonDeclaration()) and whenever one is clicked
-                //it will increase the value by one
-                this.Controls[x].Text = (Convert.ToInt16(this.Controls[x].Text) + 1).ToString();
-            }
-            else
-            {
-                //checks the value of the corresponding textbox to see if it is >0.
-                //if yes, the value will drop by one, that way the minimum value in the textbox is "0"
-                if (Convert.ToInt16(this.Controls[x].Text) > 0)
-                {
-                    this.Controls[x].Text = (Convert.ToInt16(this.Controls[x].Text) - 1).ToString();
-                }
-            }
-        }
-
-        private void ButtonDeclaration()
-        {
-            //defines all of the corresponding textboxes for each button,
-            //allowing for the program to read the tag and pass it through to affect the value of the corresponding textbox.
-            #region Positive Buttons
-            btnAddHighAutoCone.Tag = "txtAutoHighCones";
-            btnAddMidAutoCone.Tag = "txtAutoMidCones";
-            btnAddLowAutoCone.Tag = "txtAutoLowCones";
-
-            btnAddHighAutoCube.Tag = "txtAutoHighCubes";
-            btnAddMidAutoCube.Tag = "txtAutoMidCubes";
-            btnAddLowAutoCube.Tag = "txtAutoLowCubes";
-
-            btnAddHighTeleCone.Tag = "txtTeleHighCones";
-            btnAddMidTeleCone.Tag = "txtTeleMidCones";
-            btnAddLowTeleCone.Tag = "txtTeleLowCones";
-
-            btnAddHighTeleCube.Tag = "txtTeleHighCubes";
-            btnAddMidTeleCube.Tag = "txtTeleMidCubes";
-            btnAddLowTeleCube.Tag = "txtTeleLowCubes";
-            #endregion
-            //does the same process for the buttons that subtract.
-            #region Negative Buttons
-            btnSubtractHighAutoCone.Tag = "txtAutoHighCones";
-            btnSubtractMidAutoCone.Tag = "txtAutoMidCones";
-            btnSubtractLowAutoCone.Tag = "txtAutoLowCones";
-
-            btnSubtractHighAutoCube.Tag = "txtAutoHighCubes";
-            btnSubtractMidAutoCube.Tag = "txtAutoMidCubes";
-            btnSubtractLowAutoCube.Tag = "txtAutoLowCubes";
-
-            btnSubtractHighTeleCone.Tag = "txtTeleHighCones";
-            btnSubtractMidTeleCone.Tag = "txtTeleMidCones";
-            btnSubtractLowTeleCone.Tag = "txtTeleLowCones";
-
-            btnSubtractHighTeleCube.Tag = "txtTeleHighCubes";
-            btnSubtractMidTeleCube.Tag = "txtTeleMidCubes";
-            btnSubtractLowTeleCube.Tag = "txtTeleLowCubes";
-            #endregion
-
-            #region Textbox Addition to the list checking system.
-            unsavedData.Add(txtAutoHighCones);
-            unsavedData.Add(txtAutoMidCones);
-            unsavedData.Add(txtAutoLowCones);
-
-            unsavedData.Add(txtAutoHighCubes);
-            unsavedData.Add(txtAutoMidCubes);
-            unsavedData.Add(txtAutoLowCubes);
-
-            unsavedData.Add(txtTeleHighCones);
-            unsavedData.Add(txtTeleMidCones);
-            unsavedData.Add(txtTeleLowCones);
-
-            unsavedData.Add(txtTeleHighCubes);
-            unsavedData.Add(txtTeleMidCubes);
-            unsavedData.Add(txtTeleLowCubes);
-            #endregion
-        }
-
-        private void btnAddHighAutoCone_Click(object sender, EventArgs e)
-        {
-            //takes the button that was clicked and turns it into a passthrough into the next subprogram
-            var button = sender;
-            //specifically told to add one to the corresponding button
-            IncreaseValue(button, true);
-        }
-
-        private void btnSubtractHighAutoCone_Click(object sender, EventArgs e)
-        {
-            //takes the button that was clicked and turns it into a passthrough into the next subprogram
-            var button = sender;
-            //specifically told to add one to the corresponding button
-            //subtracts 1 from the value if there is one to subtract.
-            IncreaseValue(button, false);
-        }
-
-        private void txtTeamNumber_KeyPress(object sender, KeyPressEventArgs e)
+        private void tb_TeamNumber_Keypress(object sender, KeyPressEventArgs e)
         {
             //stack overflow explains this quite well
             //https://stackoverflow.com/questions/463299/how-do-i-make-a-textbox-that-only-accepts-numbers
             //prevents non numeric characters from being put into the textbox
             //done to prevent accidental commas that could mess up the .CSV file that is exported.
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) e.Handled = true;
         }
+        #endregion
 
-        private void button25_Click(object sender, EventArgs e)
-        {
-            if (notesOpened == false)
-            {
-                this.Height += 125;
-                notesOpened = true;
-                btnNotes.Text = "Collapse";
-            } else if (notesOpened == true) {
-                this.Height -= 125;
-                notesOpened = false;
-                btnNotes.Text = "Notes";
-            }
-        }
-
-        private void txtNotes_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && !char.IsPunctuation(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-
-            if (e.KeyChar == Convert.ToChar(",") || e.KeyChar == Convert.ToChar("\r") || e.KeyChar == Convert.ToChar("\n"))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void RecordDataIntoCSV()
-        {
-            #region inefficient, improving with the use of dictionaries
-            //string autoHighCones, autoMidCones, autoLowCones, autoHighCubes, autoMidCubes, autoLowCubes = "";
-            //string teleHighCones, teleMidCones, teleLowCones, teleHighCubes, teleMidCubes, teleLowCubes = "";
-            //string teamNumber = "";
-            //string matchNumber = "";
-            //string position, autoBalance, endBalance = "";
-            //string mobility, links, parked, floorIntake, shelfIntake = "";
-
-            //teamNumber = txtTeamNumber.Text;
-            //position = cmbPosition.Text;
-            //matchNumber = txtMatchNumber.Text;
-
-            //autoHighCones = txtAutoHighCones.Text;
-            //autoMidCones= txtAutoMidCones.Text;
-            //autoLowCones = txtAutoLowCones.Text;
-
-            //autoHighCubes = txtAutoHighCubes.Text;
-            //autoMidCubes = txtAutoMidCubes.Text;
-            //autoLowCubes = txtAutoLowCubes.Text;
-
-            //autoBalance = cmbAutoCharge.Text;
-
-            //mobility = chkMobility.Checked.ToString();
-
-            //teleHighCones = txtTeleHighCones.Text;
-            //teleMidCones= txtTeleMidCones.Text;
-            //teleLowCones= txtTeleLowCones.Text;
-
-            //teleHighCubes = txtTeleHighCubes.Text;
-            //teleMidCubes = txtTeleMidCubes.Text;
-            //teleLowCubes = txtTeleLowCubes.Text;
-
-            //links = chkLink.Checked.ToString();
-            //endBalance = cmbEndGameChargingStation.Text;
-            //parked = chkPark.Checked.ToString();
-
-            //floorIntake = chkFloor.Checked.ToString();
-            //shelfIntake = chkShelf.Checked.ToString();
-
-            //string header = "Team Number,Position,Match Number,Mobility Achieved,Auto High Cones,Auto Mid Cones,Auto Low Cones,Auto High Cubes,Auto Mid Cubes,Auto Low Cubes,Auto Charging Station Position,Tele High Cones,Tele Mid Cones,Tele Low Cones,Tele High Cubes,Tele Mid Cubes,Tele Low Cubes,End Game Charging Station,Link Coordination,Parked,Floor Pickup,Shelf Pickup,Notes";
-            #endregion
-
-            string header = "";
-
-            foreach (KeyValuePair<string, List<string>> i in data)
-            {
-                header += (i.Key+ ",");
-            }
-            MessageBox.Show(header);
-
-
-
-
-        }
     }
 }
