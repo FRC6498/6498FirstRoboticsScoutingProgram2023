@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using static _6498FirstRobotics2023ScoutingProgram.Program;
 namespace _6498FirstRobotics2023ScoutingProgram
 {
     internal static class Program
