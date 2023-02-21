@@ -4,7 +4,9 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,6 +28,10 @@ namespace _6498FirstRobotics2023ScoutingProgram
         List<TextBox> unsavedData = new List<TextBox>();
         bool dataNotSaved = false;
         bool notesOpened = false;
+
+        public string filePath = "";
+
+        public string recoveryFilePath = "";
         // "Team Number,Position,Match Number,Mobility Achieved,Auto High Cones,Auto Mid Cones,Auto Low Cones,
         // Auto High Cubes,Auto Mid Cubes,Auto Low Cubes,Auto Charging Station Position,
         // Tele High Cones,Tele Mid Cones,Tele Low Cones,Tele High Cubes,Tele Mid Cubes,Tele Low Cubes,
@@ -340,5 +346,28 @@ namespace _6498FirstRobotics2023ScoutingProgram
         }
         #endregion
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            sfdSaveCSV.Filter = "csv files (*.csv)|*.csv";
+            sfdSaveCSV.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ofdOpenCSV.Filter = "csv files (*.csv)|*.csv";
+            ofdOpenCSV.ShowDialog();
+            
+        }
+
+        private void ofdOpenCSV_FileOk(object sender, CancelEventArgs e)
+        {
+            filePath = ofdOpenCSV.FileName;
+            MessageBox.Show(filePath);
+        }
+
+        private void sfdSaveCSV_FileOk(object sender, CancelEventArgs e)
+        {
+            
+        }
     }
 }

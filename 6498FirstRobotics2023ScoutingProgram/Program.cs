@@ -81,6 +81,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
         #endregion
     }
 
-
+    //List<Checkboxes> check = new List<Checkboxes>;
+    //check.add(chkBox1);
 
 }
