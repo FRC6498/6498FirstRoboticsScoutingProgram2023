@@ -116,9 +116,9 @@
             this.ofdOpenCSV = new System.Windows.Forms.OpenFileDialog();
             this.sfdSaveCSV = new System.Windows.Forms.SaveFileDialog();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnl_Info.SuspendLayout();
             this.pnl_Auto.SuspendLayout();
             this.pnl_TeleOp.SuspendLayout();
@@ -1066,7 +1066,7 @@
             this.pnl_Info.Controls.Add(this.lbl_Info_MatchNumber);
             this.pnl_Info.Controls.Add(this.tb_Info_MatchNumber);
             this.pnl_Info.Location = new System.Drawing.Point(-13, -12);
-            this.pnl_Info.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnl_Info.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_Info.Name = "pnl_Info";
             this.pnl_Info.Size = new System.Drawing.Size(251, 269);
             this.pnl_Info.TabIndex = 79;
@@ -1106,7 +1106,7 @@
             this.pnl_Auto.Controls.Add(this.tb_Auto_CubeLow);
             this.pnl_Auto.Controls.Add(this.btn_Auto_CubeLowAdd);
             this.pnl_Auto.Location = new System.Drawing.Point(-13, -12);
-            this.pnl_Auto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnl_Auto.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_Auto.Name = "pnl_Auto";
             this.pnl_Auto.Size = new System.Drawing.Size(738, 724);
             this.pnl_Auto.TabIndex = 80;
@@ -1142,7 +1142,7 @@
             this.pnl_TeleOp.Controls.Add(this.tb_TeleOp_CubeLow);
             this.pnl_TeleOp.Controls.Add(this.btn_TeleOp_CubeLowAdd);
             this.pnl_TeleOp.Location = new System.Drawing.Point(725, -12);
-            this.pnl_TeleOp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnl_TeleOp.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_TeleOp.Name = "pnl_TeleOp";
             this.pnl_TeleOp.Size = new System.Drawing.Size(621, 507);
             this.pnl_TeleOp.TabIndex = 81;
@@ -1158,7 +1158,7 @@
             this.pnl_EndGame.Controls.Add(this.lbl_EndGame_Park);
             this.pnl_EndGame.Controls.Add(this.chk_EndGame_Park);
             this.pnl_EndGame.Location = new System.Drawing.Point(1347, -12);
-            this.pnl_EndGame.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnl_EndGame.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_EndGame.Name = "pnl_EndGame";
             this.pnl_EndGame.Size = new System.Drawing.Size(535, 403);
             this.pnl_EndGame.TabIndex = 27;
@@ -1172,7 +1172,7 @@
             this.pnl_Intake.Controls.Add(this.lbl_Intake_Shelf);
             this.pnl_Intake.Controls.Add(this.chk_Intake_Shelf);
             this.pnl_Intake.Location = new System.Drawing.Point(1347, 391);
-            this.pnl_Intake.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnl_Intake.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_Intake.Name = "pnl_Intake";
             this.pnl_Intake.Size = new System.Drawing.Size(535, 224);
             this.pnl_Intake.TabIndex = 82;
@@ -1196,17 +1196,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(621, 219);
             this.panel1.TabIndex = 83;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(123, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(398, 54);
-            this.label1.TabIndex = 72;
-            this.label1.Text = "File Management";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // button1
             // 
@@ -1232,6 +1221,17 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(123, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(398, 54);
+            this.label1.TabIndex = 72;
+            this.label1.Text = "File Management";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // frmData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1251,6 +1251,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmData";
             this.Text = "Scouting Program";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmData_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnl_Info.ResumeLayout(false);
             this.pnl_Info.PerformLayout();

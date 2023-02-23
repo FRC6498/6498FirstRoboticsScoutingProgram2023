@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static _6498FirstRobotics2023ScoutingProgram.Program;
+using static System.Net.WebRequestMethods;
 
 namespace _6498FirstRobotics2023ScoutingProgram
 {
@@ -60,7 +61,8 @@ namespace _6498FirstRobotics2023ScoutingProgram
             {"Link Coordination", new List<string>()},
             {"Parked", new List<string>()},
             {"Floor Pickup", new List<string>()},
-            {"Shelf Pickup", new List<string>()}
+            {"Shelf Pickup", new List<string>()},
+            {"Notes", new List<string>() }
 
         };
 
@@ -260,7 +262,6 @@ namespace _6498FirstRobotics2023ScoutingProgram
         }
         #endregion
 
-
         //Regions are really nice for keeping things sorted
         #region Misc buttons
         private void btn_ShowNotes_Click(object sender, EventArgs e)
@@ -285,8 +286,53 @@ namespace _6498FirstRobotics2023ScoutingProgram
         {
             //We might want to change this into adding to the dictionary
             RecordDataIntoCSV(data);
+            AddValuesToDictionary();
             ResetInputs();
         }
+
+        #region assigns varaibles values from the user into dictionary
+
+        private void AddValuesToDictionary()
+        {
+            data["Team Number"].Add(tb_Info_TeamNumber.Text);
+            data["Position"].Add(cmb_Info_Position.Text);
+            data["Match Number"].Add(tb_Info_MatchNumber.Text);
+
+            data["Mobility Achieved"].Add(chk_Auto_Community.Checked.ToString());
+            data["Auto High Cones"].Add(tb_Auto_ConeHigh.Text);
+            data["Auto Mid Cones"].Add(tb_Auto_ConeMid.Text);
+            data["Auto Low Cones"].Add(tb_Auto_ConeLow.Text);
+            data["Auto High Cubes"].Add(tb_Auto_CubeHigh.Text);
+            data["Auto Mid Cubes"].Add(tb_Auto_CubeMid.Text);
+            data["Auto Low Cubes"].Add(tb_Auto_CubeLow.Text);
+            data["Auto Charging Station Position"].Add(cmb_Auto_Station.Text);
+            data["Tele High Cones"].Add(tb_TeleOp_ConeHigh.Text);
+            data["Tele Mid Cones"].Add(tb_TeleOp_ConeMid.Text);
+            data["Tele Low Cones"].Add(tb_TeleOp_ConeLow.Text);
+            data["Tele High Cubes"].Add(tb_TeleOp_CubeHigh.Text);
+            data["Tele Mid Cubes"].Add(tb_TeleOp_CubeMid.Text);
+            data["Tele Low Cubes"].Add(tb_TeleOp_CubeLow.Text);
+            data["End Game Charging Station"].Add(cmb_EndGame_Station.Text);
+            data["Link Coordination"].Add(chk_EndGame_Coordination.Checked.ToString());
+            data["Parked"].Add(chk_EndGame_Park.Checked.ToString());
+            data["Floor Pickup"].Add(chk_Intake_Floor.Checked.ToString());
+            data["Shelf Pickup"].Add(chk_Intake_Shelf.Checked.ToString());
+            data["Notes"].Add(tb_Notes.Text);
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+        #endregion
 
         private void btn_Exit_Click(object sender, EventArgs e)
         {
@@ -362,12 +408,38 @@ namespace _6498FirstRobotics2023ScoutingProgram
         private void ofdOpenCSV_FileOk(object sender, CancelEventArgs e)
         {
             filePath = ofdOpenCSV.FileName;
-            MessageBox.Show(filePath);
+            
         }
 
         private void sfdSaveCSV_FileOk(object sender, CancelEventArgs e)
         {
-            
+            StreamWriter writer = null;
+            string fileAccess = sfdSaveCSV.FileName;
+            writer = new StreamWriter(fileAccess);
+
+            string header = "";
+
+            foreach (KeyValuePair<string, List<string>> i in data)
+            {
+                header += (i.Key + ",");
+            }
+
+            writer.WriteLine(header);
+
+            writer.Close();
+
+            filePath = sfdSaveCSV.FileName;
         }
+
+        private void frmData_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            RecoveryDataCSV(data);
+        }
+
+        //USE IN RECOVERY DIRECTORY SETUP
+        //const string FILE_NAME = @"/Coffee_Shop_Info.xml";
+        //
+        //filePath = Directory.GetCurrentDirectory() + FILE_NAME;
+
     }
 }

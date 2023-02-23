@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +18,8 @@ namespace _6498FirstRobotics2023ScoutingProgram
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmData());
+
+
         }
 
         #region Form non-specific methods
@@ -79,6 +82,63 @@ namespace _6498FirstRobotics2023ScoutingProgram
 
         }
         #endregion
+
+        internal static void RecoveryDataCSV(Dictionary<string, List<string>> csvData)
+        {
+            StreamWriter writer = null;
+            string fileAccess = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\Documents\6498Scouting\2023";
+
+            if (Directory.Exists(fileAccess))
+            {
+                //success
+            }
+            else
+            {
+                //creates a path to be saved to if it does not actively exist
+                DirectoryInfo di = Directory.CreateDirectory(fileAccess);
+            }
+            bool fileExists = true;
+            int i = 0;
+            string fileName = "";
+            while (fileExists != false)
+            {
+                i++;
+                fileName = @"/recovery" + i + @".csv";
+                if (!Directory.Exists(fileAccess + fileName)) 
+                {
+                    fileExists = false;
+                }
+            }
+
+            writer = new StreamWriter(fileAccess+fileName);
+            //writes the header on the file
+            string header = "";
+            foreach (KeyValuePair<string, List<string>> j in csvData)
+            {
+                header += (j.Key + ",");
+            }
+            writer.WriteLine(header);
+
+            //used to count the amount of items in the list in the dictionary
+            //great help from stack overflow
+            //https://stackoverflow.com/questions/34468224/how-do-i-count-the-number-of-values-in-a-particular-key-in-a-dictionary
+
+            int csvLines = csvData["Team Number"].Count;
+
+            for (int x = 0; x < csvLines; x++)
+            {
+                string newLine = "";
+                foreach (KeyValuePair<string, List<string>> j in csvData)
+                {
+                    newLine += csvData[j.Key][x]+",";
+                }
+                writer.WriteLine(newLine);
+            }
+
+
+            writer.Close();
+        }
+
     }
 
     //List<Checkboxes> check = new List<Checkboxes>;
