@@ -29,9 +29,9 @@ namespace _6498FirstRobotics2023ScoutingProgram
         List<TextBox> unsavedData = new List<TextBox>();
         bool dataNotSaved = false;
         bool notesOpened = false;
-
+        int newLineNumber = 0;
         public string filePath = "";
-
+        StreamWriter writer = null;
         public string recoveryFilePath = "";
         // "Team Number,Position,Match Number,Mobility Achieved,Auto High Cones,Auto Mid Cones,Auto Low Cones,
         // Auto High Cubes,Auto Mid Cubes,Auto Low Cubes,Auto Charging Station Position,
@@ -285,8 +285,9 @@ namespace _6498FirstRobotics2023ScoutingProgram
         private void btn_Submit_Click(object sender, EventArgs e)
         {
             //We might want to change this into adding to the dictionary
-            RecordDataIntoCSV(data);
             AddValuesToDictionary();
+            newLineNumber = RecordDataIntoCSV(data,filePath, newLineNumber, writer);
+            
             ResetInputs();
         }
 
@@ -318,20 +319,7 @@ namespace _6498FirstRobotics2023ScoutingProgram
             data["Floor Pickup"].Add(chk_Intake_Floor.Checked.ToString());
             data["Shelf Pickup"].Add(chk_Intake_Shelf.Checked.ToString());
             data["Notes"].Add(tb_Notes.Text);
-
-
-
-
-
-
-
-
-
-
         }
-
-
-
         #endregion
 
         private void btn_Exit_Click(object sender, EventArgs e)
